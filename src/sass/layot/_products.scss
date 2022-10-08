@@ -146,6 +146,11 @@ img {
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
+  // .products__name.cream::before {
+  //   background-image: url('../images/products-ice-cream-mobile@2x.png');
+  //   background-size: cover;
+  //   background-position: center;
+  // }
   .products__name.coffee::before {
     background-image: url('../images/products-ice-coffee-mobile@2x.png');
     background-size: cover;
