@@ -216,7 +216,7 @@ img {
   }
 }
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h2,
@@ -229,4 +229,5 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-}/*# sourceMappingURL=main.css.map */
+}
+/*# sourceMappingURL=main.css.map */
