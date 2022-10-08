@@ -1,17 +1,4 @@
-.franchise-modal__backdrop{
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(255, 255, 255, 0.1);
-}
-.franchise-modal__backdrop.is-hidden{
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-}
+
 .franchise-modal{
     position: absolute;
     top: 50%;
@@ -24,7 +11,7 @@
     border: 2px solid #F8D24E;
     border-radius: 10px;
 }
-.franchise-modal__close-btn{
+.modal-close-btn{
     position: absolute;
     top: 20px;
     right: 20px;
@@ -36,16 +23,7 @@
     padding: 0;
 }
 
-.franchise-modal__close-icon{
-transform: scale(1);
-
-      &:hover,
-      &:focus{
-     transform: scale(1.50);
-     transition: transform 1000ms ease;
-    }
-}
-.franchise-modal__subtitle{
+.title{
     display: block;
     font-family: Seymour One;
     font-size: 20px;
@@ -66,7 +44,7 @@ transform: scale(1);
     margin-bottom: 32px;
 }
 
-.franchise-modal__form{
+.franchise-modal-form{
     display: flex;
     flex-direction: column;
     max-width: 368px;
@@ -74,7 +52,7 @@ transform: scale(1);
     margin-right: auto;
 }
 
-.franchise-modal__input{
+.franchise-modal-form__input{
     width: 100%;
     height: 42px;
     border: 1px solid rgba(132, 161, 120, 1);
@@ -88,12 +66,9 @@ transform: scale(1);
     &::placeholder {
             color: rgba(19, 19, 19, 0.5);
         }
-    &:focus{
-        outline: none;
-        border: 4px solid rgba(132, 161, 120, 1);
-    }
+   
 }
-.frachise-modal__message{
+.frachise-modal-form__textarea{
     width: 100%;
     height: 84px;
     border: 1px solid rgba(132, 161, 120, 1);
@@ -108,17 +83,5 @@ transform: scale(1);
         color: rgba(19, 19, 19, 0.5);
      }
 
-     &:focus {
-         outline: none;
-        border: 4px solid rgba(132, 161, 120, 1);
-    }
-}
-.frachise-modal__submit-btn{
-    width: 121px;
-    height: 42px;
-    border: transparent;
-    border-radius: 10px;
-    background-color: #F8D24E;
-    margin-left: auto;
-    margin-right: auto;
+   
 }
