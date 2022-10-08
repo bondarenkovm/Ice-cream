@@ -1,0 +1,53 @@
+<div class="franchise-modal__backdrop " data-modal>
+  <div class="franchise-modal">
+    <button class="franchise-modal__close-btn" type="button" data-modal-close>
+      <svg class="franchise-modal__close-icon" width="20px" height="20px">
+        <use href="./images/symbol-defs.svg#icon-close"></use>
+      </svg>
+    </button>
+    <b class="franchise-modal__subtitle"
+      >Thank you for your interest in owning an Ice Cream shop</b>
+    <p class="franchise-modal__text">
+      Due to the overwhelming volume of franchise requests we are not accepting
+      new franchisee applications at this time. Once the application process
+      resumes, we will contact you for further information. Please fill out the
+      contact information below and we will reach out for additional
+      information. We appreciate your patience.
+    </p>
+    <form class="franchise-modal__form">
+      <input
+        class="franchise-modal__input"
+        type="text"
+        placeholder="Name"
+        pattern="[a-zA-Zа-яА-яіІїЇ]+"
+        name="user_name"
+        minlength="3"
+        required
+      />
+      <input
+        class="franchise-modal__input"
+        type="tel"
+        placeholder="Phone"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+        title="xxx-xxx-xx-xx"
+        name="user_phone"
+        required
+      />
+      <input
+        class="franchise-modal__input"
+        type="email"
+        placeholder="Email"
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+        title="example@mail.com"
+        name="user_email"
+        required
+      />
+      <textarea
+      class="frachise-modal__message"
+        placeholder="Comment"
+        name="user_message"
+      ></textarea>
+      <button class="frachise-modal__submit-btn" type="submit">Submit</button>
+    </form>
+  </div>
+</div>
