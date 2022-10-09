@@ -110,7 +110,7 @@ img {
 .products__card-wrapper {
   position: relative;
 }
-.circle {
+.products__circle {
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -121,11 +121,11 @@ img {
   z-index: 9;
 }
 
-.circle__green {
+.products__circle--green {
   background: linear-gradient(0deg, #9cbe8fb3, #9cbe8fb3), #d9d9d9;
   box-shadow: 0 5.34219px 20.0332px #0a881740;
 }
-.circle__yellow {
+.products__circle--yellow {
   background: linear-gradient(
       0deg,
       rgba(248, 210, 78, 0.7),
@@ -134,7 +134,7 @@ img {
     #d9d9d9;
   box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
 }
-.circle__brown {
+.products__circle--brown {
   background: linear-gradient(
       0deg,
       rgba(213, 117, 63, 0.7),
@@ -235,7 +235,7 @@ img {
     margin-top: 19px;
   }
 
-  .circle {
+  .products__circle {
     width: 199px;
     height: 196px;
   }
@@ -327,7 +327,7 @@ img {
       background-size: cover;
       background-position: center;
     }
-    .circle {
+    .products__circle {
       width: 300px;
       height: 300px;
     }
