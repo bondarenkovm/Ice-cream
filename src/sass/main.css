@@ -362,7 +362,6 @@ img {
     height: 300px;
   }
 }
-
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -381,6 +380,12 @@ ul {
 
 button {
   cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .modal-close-btn {
