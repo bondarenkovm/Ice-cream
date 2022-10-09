@@ -1,3 +1,7 @@
+@import './utils/mixins-contacts';
+@import './base/container-contacts';
+@import './base/base';
+
 @import './layot/about';
 @import './layot/advantages';
 @import './layot/contacts';
@@ -16,3 +20,11 @@
 @import './layot/mobile-menu';
 
 @import './base/base';
+
+@import './components/modal-close-btn';
+@import './components/backdrop';
+@import './components/container-contacts';
+
+@import './utils/mixins';
+@import './utils/variables';
+

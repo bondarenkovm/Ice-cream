@@ -1,35 +1,44 @@
-<section class="section">
+<section id="products" class="section products__section">
     <div class="container">
         <p class="products__label">100% natural</p>
         <h2 class="products__title">products</h2>
         <ul class="products__list">
-            <li class="products__item">
-                <h3 class="products__name">ice cream</h3>
-                <p class="products__description">Soft ice cream with a delicate taste. Made with milk, cream, sugar and
-                    natural stabilizer </p>
-                <button type="button">
-                    <svg class="products__icon" width="40" height="16">
-                        <use href="./images/symbol-defs.svg#icon-arrow"></use>
-                    </svg></button>
-            </li>
-            <li class="products__item">
-                <h3 class="products__name">ice coffee</h3>
-                <p class="products_description">Fragrant invigorating drink created from 100% natural ingredients
-                    without the use of preservatives and flavor enhancers </p>
-                <button type="button">
-                    <svg class="products__icon" width="40" height="16">
-                        <use href="./images/symbol-defs.svg#icon-arrow"></use>
-                    </svg></button>
-            </li>
-            <li class="products__item">
-                <h3 class="products__name">milkshakes</h3>
-                <p class="products__description">Sweet drinks based on milk and ice cream, supplemented with syrups,
-                    fruits, berries and other sweets of your choice </p>
-                <button type="button">
-                    <svg class="products__icon" width="40" height="16">
-                        <use href="./images/symbol-defs.svg#icon-arrow"></use>
-                    </svg></button>
-            </li>
+            <div class="products__card-wrapper">
+                <li class="products__item products__item--green ">
+                    <div class="products__circle products__circle--green"></div>
+                    <h3 class="products__name cream">ice cream</h3>
+                    <p class="products__description">Soft ice cream with a delicate taste. Made with milk, cream, sugar
+                        and natural stabilizer </p>
+                    <button type="button" class="products__btn">
+                        <svg class="products__icon" width="40" height="16">
+                            <use href="./images/symbol-defs.svg#icon-arrow"></use>
+                        </svg></button>
+                </li>
+            </div>
+            <div class="products__card-wrapper">
+                <li class="products__item products__item--yellow">
+                    <div class="products__circle products__circle--yellow"></div>
+                    <h3 class="products__name coffee">ice coffee</h3>
+                    <p class="products__description">Fragrant invigorating drink created from 100% natural ingredients
+                        without the use of preservatives and flavor enhancers </p>
+                    <button type="button" class="products__btn">
+                        <svg class="products__icon" width="40" height="16">
+                            <use href="./images/symbol-defs.svg#icon-arrow"></use>
+                        </svg></button>
+                </li>
+            </div>
+            <div class="products__card-wrapper">
+                <li class="products__item products__item--brown">
+                    <div class="products__circle products__circle--brown"></div>
+                    <h3 class="products__name milkshake">milkshakes</h3>
+                    <p class="products__description">Sweet drinks based on milk and ice cream, supplemented with syrups,
+                        fruits, berries and other sweets of your choice </p>
+                    <button type="button" class="products__btn">
+                        <svg class="products__icon" width="40" height="16">
+                            <use href="./images/symbol-defs.svg#icon-arrow"></use>
+                        </svg></button>
+                </li>
+            </div>
         </ul>
     </div>
 </section>
