@@ -62,6 +62,7 @@
     position: absolute;
     width: 100%;
     border: 1px solid #e1e1e1;
+    background-color: #e1e1e1;
     left: 0;
     bottom: -24px;
   }
@@ -88,16 +89,68 @@
     position: absolute;
     width: 100%;
     border: 1px solid #e1e1e1;
+    background-color: #e1e1e1;
     left: 0;
     bottom: -24px;
   }
 }
 .contacts-page__info {
-  font-style: normal;
   font-weight: 500;
   @include font-contacts(12px, 18px);
   color: #131313;
   text-decoration: none;
+}
+.contacts-btn-list__button-locations {
+  width: 196px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8d24e;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+
+  font-weight: 600;
+  @include font-contacts(14px, 18px);
+  color: #131313;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    background-color: #0a8817;
+  }
+  &:focus {
+    color: #fcfcfc;
+    fill: #fcfcfc;
+  }
+}
+.contacts-btn-list__button-franchise {
+  width: 196px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+  cursor: pointer;
+
+  font-weight: 600;
+  @include font-contacts(14px, 18px);
+  color: #131313;
+  outline: none;
+  &:hover,
+  &:focus {
+    border: 2px solid #0a8817;
+  }
+  &:focus {
+    color: #fcfcfc;
+    fill: #fcfcfc;
+  }
+}
+.contacts-btn-list__icon {
+  margin-left: 6px;
 }
 
 @media screen and (max-width: 767px) {
@@ -108,8 +161,18 @@
     margin-bottom: 32px;
   }
   .contacts__item {
-    width: 280px;
     padding: 40px 32px;
+  }
+  .contacts-btn-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+  .contacts-btn-list__button-locations,
+  .contacts-btn-list__button-franchise {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -162,6 +225,11 @@
   }
   .contacts-page__info {
     @include font-contacts(14px, 24px);
+  }
+  .contacts-btn-list {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
   }
 }
 

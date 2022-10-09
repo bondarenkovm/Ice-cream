@@ -115,6 +115,7 @@ ul {
   position: absolute;
   width: 100%;
   border: 1px solid #e1e1e1;
+  background-color: #e1e1e1;
   left: 0;
   bottom: -24px;
 }
@@ -146,17 +147,69 @@ ul {
   position: absolute;
   width: 100%;
   border: 1px solid #e1e1e1;
+  background-color: #e1e1e1;
   left: 0;
   bottom: -24px;
 }
 
 .contacts-page__info {
-  font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.5;
   color: #131313;
   text-decoration: none;
+}
+
+.contacts-btn-list__button-locations {
+  width: 196px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8d24e;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2857142857;
+  color: #131313;
+  outline: none;
+}
+.contacts-btn-list__button-locations:hover, .contacts-btn-list__button-locations:focus {
+  background-color: #0a8817;
+}
+.contacts-btn-list__button-locations:focus {
+  color: #fcfcfc;
+  fill: #fcfcfc;
+}
+
+.contacts-btn-list__button-franchise {
+  width: 196px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2857142857;
+  color: #131313;
+  outline: none;
+}
+.contacts-btn-list__button-franchise:hover, .contacts-btn-list__button-franchise:focus {
+  border: 2px solid #0a8817;
+}
+.contacts-btn-list__button-franchise:focus {
+  color: #fcfcfc;
+  fill: #fcfcfc;
+}
+
+.contacts-btn-list__icon {
+  margin-left: 6px;
 }
 
 @media screen and (max-width: 767px) {
@@ -167,8 +220,18 @@ ul {
     margin-bottom: 32px;
   }
   .contacts__item {
-    width: 280px;
     padding: 40px 32px;
+  }
+  .contacts-btn-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+  .contacts-btn-list__button-locations,
+.contacts-btn-list__button-franchise {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media screen and (min-width: 768px) {
@@ -226,6 +289,11 @@ ul {
   .contacts-page__info {
     font-size: 14px;
     line-height: 1.7142857143;
+  }
+  .contacts-btn-list {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
   }
 }
 @media screen and (min-width: 1200px) {
