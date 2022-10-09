@@ -1,5 +1,5 @@
 
-.franchise-modal{
+.franchise-modal__container{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -11,17 +11,7 @@
     border: 2px solid #F8D24E;
     border-radius: 10px;
 }
-.modal-close-btn{
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
-    border: transparent;
-    padding: 0;
-}
+
 
 .title{
     display: block;
