@@ -1,74 +1,61 @@
 (() => {
-const refs = {
-openModalBtn: document.querySelector("[hero-modal-open]"),
-closeModalBtn: document.querySelector("[hero-modal-close]"),
-modal: document.querySelector("[hero-modal]"),
-};
+    const refs = {
+        openHeroBtn: document.querySelector("[hero-modal-open]"),
+        closeHeroBtn: document.querySelector("[hero-modal-close]"),
+        modalHero: document.querySelector("[hero-modal]"),
 
-refs.openModalBtn.addEventListener("click", toggleModal);
-refs.closeModalBtn.addEventListener("click", toggleModal);
+        openProductBtn: document.querySelector("[product-modal-open]"),
+        closeProductBtn: document.querySelector("[product-modal-close]"),
+        modalProduct: document.querySelector("[product-modal]"),
+        
+        openReadBtn: document.querySelector("[read-modal-open]"),
+        closeReadBtn: document.querySelector("[read-modal-close]"),
+        modalRead: document.querySelector("[read-modal]"),
 
-function toggleModal() {
-refs.modal.classList.toggle("is-hidden");
+        openLocationBtn: document.querySelector("[location-modal-open]"),
+        closeLocationBtn: document.querySelector("[location-modal-close]"),
+        modalLocation: document.querySelector("[location-modal]"),
+
+        openFranchiseBtn: document.querySelector("[franchise-modal-open]"),
+        closeFranchiseBtn: document.querySelector("[franchise-modal-close]"),
+        modalFranchise: document.querySelector("[franchise-modal]"),
+
+    };
+
+    refs.openHeroBtn.addEventListener("click", toggleHeroModal);
+    refs.closeHeroBtn.addEventListener("click", toggleHeroModal);
+
+    refs.openProductBtn.addEventListener("click", toggleProductModal);
+    refs.closeProductBtn.addEventListener("click", toggleProductModal);
+
+    refs.openReadBtn.addEventListener("click", toggleReadModal);
+    refs.closeReadBtn.addEventListener("click", toggleReadModal);
+
+    refs.openLocationBtn.addEventListener("click", toggleLocationModal);
+    refs.closeLocationBtn.addEventListener("click", toggleLocationModal);
+    
+    refs.openFranchiseBtn.addEventListener("click", toggleFranchiseModal);
+    refs.closeFranchiseBtn.addEventListener("click", toggleFranchiseModal);
+
+    function toggleHeroModal() {
+        refs.modalHero.classList.toggle("is-hidden");
+    };
+
+    function toggleProductModal() {
+        refs.modalProduct.classList.toggle("is-hidden");
+    };
+
+    function toggleReadModal() {
+        refs.modalRead.classList.toggle("is-hidden");
+    };
+
+    function toggleLocationModal() {
+        refs.modalLocation.classList.toggle("is-hidden");
+    };
+
+    function toggleFranchiseModal() {
+        refs.modalFranchise.classList.toggle("is-hidden");
+    };
 }
-})();
-
-(() => {
-const refs = {
-openModalBtn: document.querySelector("[products-modal-open]"),
-closeModalBtn: document.querySelector("[products-modal-close]"),
-modal: document.querySelector("[products-modal]"),
-};
-
-refs.openModalBtn.addEventListener("click", toggleModal);
-refs.closeModalBtn.addEventListener("click", toggleModal);
-
-function toggleModal() {
-refs.modal.classList.toggle("is-hidden");
-}
-})();
-
-(() => {
-const refs = {
-openModalBtn: document.querySelector("[read-more-modal-open]"),
-closeModalBtn: document.querySelector("[read-more-modal-close]"),
-modal: document.querySelector("[read-more-modal]"),
-};
-
-refs.openModalBtn.addEventListener("click", toggleModal);
-refs.closeModalBtn.addEventListener("click", toggleModal);
-
-function toggleModal() {
-refs.modal.classList.toggle("is-hidden");
-}
-})();
-
-(() => {
-const refs = {
-openModalBtn: document.querySelector("[location-modal-open]"),
-closeModalBtn: document.querySelector("[location-modal-close]"),
-modal: document.querySelector("[location-modal]"),
-};
-
-refs.openModalBtn.addEventListener("click", toggleModal);
-refs.closeModalBtn.addEventListener("click", toggleModal);
-
-function toggleModal() {
-refs.modal.classList.toggle("is-hidden");
-}
-})();
-
-(() => {
-const refs = {
-openModalBtn: document.querySelector("[franchise-modal-open]"),
-closeModalBtn: document.querySelector("[franchise-modal-close]"),
-modal: document.querySelector("[franchise-modal]"),
-};
-
-refs.openModalBtn.addEventListener("click", toggleModal);
-refs.closeModalBtn.addEventListener("click", toggleModal);
-
-function toggleModal() {
-refs.modal.classList.toggle("is-hidden");
-}
-})();
+    
+)();
