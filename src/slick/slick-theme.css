@@ -136,7 +136,7 @@
   width: 20px;
   height: 20px;
   font-family: "slick";
-  font-size: 12px;
+  font-size: 6px;
   line-height: 20px;
   text-align: center;
   color: rgb(132, 161, 120);
@@ -145,6 +145,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 .slick-dots li.slick-active button:before {
-  color: rgb(132, 161, 120);
+  color: black;
   opacity: 0.75;
 }/*# sourceMappingURL=slick-theme.css.map */
