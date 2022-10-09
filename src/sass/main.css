@@ -1,3 +1,13 @@
+.section {
+  background-color: var(--green-bg-color);
+  padding-top: 60px;
+}
+
+.section__label {
+  text-align: center;
+  text-transform: uppercase;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -46,4 +56,15 @@ button {
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
+}
+
+:root {
+  --green-bg-color: #84A178;
+  --green-products-bg-color: #9CBE8F;
+  --yellow-products-bg-color: #EFD478;
+  --orange-products-bg-color: #D6936D;
+  --white-content-color: #FCFCFC;
+  --black-content-color: #131313;
+  --yellow-content-color: #F8D24E;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }/*# sourceMappingURL=main.css.map */
