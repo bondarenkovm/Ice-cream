@@ -1,12 +1,114 @@
-.section {
-  background-color: var(--green-bg-color);
-  padding-top: 60px;
+@mixin font($fs: 16px, $fw: inherit, $lh: 1.15, $ls: 0.04em) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh / $fs;
+    letter-spacing: $ls;
+}
+
+.section__about {
+    background-color: var(--green-bg-color);
+    padding-top: 60px;
+    padding-bottom: 42px;
+}
+
+.about__container {
+    width: 100%;
+
+    @media screen and (min-width: 320px) {
+        width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    @media screen and (min-width: 768px) {
+        width: 768px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
 }
 
 .section__label {
-// products__mobile
-  // @include font(18px, 700, 0.81);
-  text-align: center;
-  text-transform: uppercase;
+    @include font(18px, 700, 21px);
 
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white-content-color);
+
+    margin-bottom: 12px;
+}
+
+.section__title {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-family: "seymour one";
+
+    @include font(30px, 400, 38px);
+
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white-content-color);
+
+    width: 200px;
+    margin-bottom: 32px;
+}
+
+.about__image-pad {
+    position: relative;
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 278px;
+    height: 278px;
+    background-color: var(--yellow-content-color);
+    border-radius: 50%;
+
+    margin-bottom: 62px;
+}
+
+.about__picture {
+    position: absolute;
+    top: 22;
+}
+
+.about__description {
+    width: 220px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4px;
+
+    @include font(12px, 400, 21px);
+
+    text-align: center;
+    color: var(--white-content-color);
+}
+
+.about__main-text {
+    width: 220px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+
+    @include font(12px, 400, 19px);
+
+    text-align: center;
+    color: var(--white-content-color);
+}
+
+.about__button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about__icon {
+    stroke: var(--black-content-color);
+    margin-left: 5px;
 }

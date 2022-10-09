@@ -14,14 +14,117 @@
   }
 }
 
-.section {
+.section__about {
   background-color: var(--green-bg-color);
   padding-top: 60px;
+  padding-bottom: 42px;
+}
+
+.about__container {
+  width: 100%;
+}
+@media screen and (min-width: 320px) {
+  .about__container {
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about__container {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__container {
+    width: 1200px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
 
 .section__label {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.1666666667;
+  letter-spacing: 0.04em;
   text-align: center;
   text-transform: uppercase;
+  color: var(--white-content-color);
+  margin-bottom: 12px;
+}
+
+.section__title {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "seymour one";
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.2666666667;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white-content-color);
+  width: 200px;
+  margin-bottom: 32px;
+}
+
+.about__image-pad {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 278px;
+  height: 278px;
+  background-color: var(--yellow-content-color);
+  border-radius: 50%;
+  margin-bottom: 62px;
+}
+
+.about__picture {
+  position: absolute;
+  top: 22;
+}
+
+.about__description {
+  width: 220px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.75;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: var(--white-content-color);
+}
+
+.about__main-text {
+  width: 220px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5833333333;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: var(--white-content-color);
+}
+
+.about__button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about__icon {
+  stroke: var(--black-content-color);
+  margin-left: 5px;
 }
 
 .section {
