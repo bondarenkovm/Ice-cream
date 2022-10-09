@@ -1,3 +1,7 @@
+@import './utils/mixins-contacts';
+@import './base/container-contacts';
+@import './base/base';
+
 @import './layot/about';
 @import './layot/advantages';
 @import './layot/contacts';
@@ -23,3 +27,4 @@
 
 @import './utils/mixins';
 @import './utils/variables';
+
