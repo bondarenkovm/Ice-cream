@@ -6,6 +6,8 @@
   width: 100%;
   padding-left: 16px;
   padding-right: 16px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .link {
@@ -25,6 +27,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   display: block;
+  margin-bottom: -11px;
 }
 
 .products__section {
@@ -159,7 +162,7 @@ img {
   background-position: center;
 }
 
-@media screen and (min-width: 480px) and (min-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .container {
     width: 480px;
     margin-right: auto;
@@ -187,11 +190,31 @@ img {
     background-image: url("../images/products-milkshake-mobile@2x.png");
   }
 }
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .products__description {
+    margin-bottom: 0;
+  }
+}
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
     padding-left: 32px;
     padding-right: 32px;
+  }
+  .products__label {
+    font-size: 22px;
+  }
+  .products__title {
+    font-size: 34px;
+    margin-bottom: 200px;
+  }
+  .products__name {
+    font-size: 22px;
+    margin-top: 19px;
+  }
+  .circle {
+    width: 199px;
+    height: 196px;
   }
   .products__item {
     width: 224px;
@@ -206,6 +229,10 @@ img {
   }
   .products__description {
     margin-bottom: 0px;
+  }
+  .products__name::before {
+    width: 199px;
+    height: 196px;
   }
   .products__name.cream::before {
     background-image: url("../images/products-ice-cream-tablet.png");
@@ -241,6 +268,7 @@ img {
   .products__label {
     font-size: 30px;
     line-height: 1.23;
+    letter-spacing: 0.06em;
   }
   .products__title {
     font-size: 36px;
@@ -301,7 +329,7 @@ img {
   .products__item {
     width: 370px;
     height: 535px;
-    padding: 165px 64px 60px;
+    padding: 165px 63px 60px;
     margin-bottom: 57px;
   }
 }
@@ -310,6 +338,12 @@ img {
     display: flex;
     -moz-column-gap: 32px;
          column-gap: 32px;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .products__name {
+    margin-top: 32px;
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 768px) and (min-width: 1200px) {
