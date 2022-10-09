@@ -81,3 +81,20 @@
     border-radius: 10px ;
     text-align: center;
 }
+.modal-close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: transparent;
+    padding: 0;
+    transform: scale(1);
+    transition: transform 500ms linear;
+
+    &:hover {
+        transform: scale(1.5);
+    }
+}
