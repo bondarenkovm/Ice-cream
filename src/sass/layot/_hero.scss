@@ -1,0 +1,309 @@
+// ============= прячу не нужное до 767px =============
+@media screen and (max-width: 767px) {
+  .hero-plate {
+    display: none;
+  }
+  .hero__text {
+    display: none;
+  }
+  .hero-arrow-button {
+    display: none;
+  }
+  .hero-shop-list {
+    display: none;
+  }
+}
+// ============= /прячу не нужное до 767px =============
+
+.hero {
+  background-color: var(--green-bg-color);
+}
+
+.hero__container {
+  position: relative;
+  padding-top: 61px;
+  padding-left: 20px;
+  height: 453px;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 320px) {
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    height: 349px;
+    padding-top: 0;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200;
+    height: 591px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+// ============= title =============
+.hero__title {
+  font-family: 'Seymour One';
+  display: block;
+  font-style: normal;
+  width: 247px;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.26;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--white-content-color);
+  margin-bottom: 32px;
+  margin-top: 0;
+
+  @media screen and (min-width: 768px) {
+    width: 181px;
+    font-size: 18px;
+    padding-top: 40px;
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 367px;
+    font-size: 36px;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 45px;
+    left: 16px;
+    z-index: 550;
+  }
+}
+.hero__title_passion {
+  font-size: 34px;
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 38px;
+  }
+}
+// ============= /title =============
+
+// ============= anchor-list =============
+.hero__anchor-list {
+  display: flex;
+  gap: 8px;
+  @media screen and (min-width: 1200px) {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 217px;
+    left: 16px;
+    z-index: 555;
+  }
+}
+
+.anchor-list__link {
+  text-align: center;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 1.25;
+  text-decoration: none;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
+}
+
+.anchor-list__link_products {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-right: 13px;
+  padding-left: 11px;
+  color: #000000;
+  border: 2px solid var(--yellow-content-color);
+  border-radius: 8px;
+  cursor: pointer;
+  @media screen and (min-width: 1200px) {
+    padding: 12px 34px;
+  }
+
+  &:hover {
+    border-color: #0a8817; // пока такой переменной нет , позже заменю
+  }
+  &:focus {
+    color: #fcfcfc;
+    border-color: #0a8817; // пока такой переменной нет , позже заменю
+  }
+}
+
+.anchor-list__link_about {
+  padding: 7px 10px;
+  text-decoration-line: underline;
+  color: #f8d24e;
+  cursor: pointer;
+  @media screen and (min-width: 1200px) {
+    padding: 12px 21px;
+  }
+  &:hover {
+    color: #0a8817; //  пока такой переменной нет , позже заменю
+  }
+  &:focus {
+    color: var(--white-content-color);
+  }
+}
+// ============= /anchor-list =============
+
+// ============= hero-ice-cream =============
+.hero-ice-cream {
+  position: absolute;
+  display: block;
+  top: 245px;
+  left: 82px;
+  z-index: 300;
+  @media screen and (min-width: 768px) {
+    top: 25px;
+    left: 418px;
+  }
+  @media screen and (min-width: 1200px) {
+    top: 30px;
+    left: 651px;
+  }
+}
+.hero-ice-cream_bg {
+  width: 167px;
+  height: 218px;
+  position: absolute;
+  display: block;
+  top: 245px;
+  left: 82px;
+  z-index: 280;
+  background: rgba(252, 252, 252, 0.44);
+  filter: blur(26.8405px);
+  @media screen and (min-width: 768px) {
+    width: 266px;
+    height: 341px;
+    top: 25px;
+    left: 418px;
+    filter: blur(27.9859px);
+  }
+  @media screen and (min-width: 1200px) {
+    width: 477px;
+    height: 590px;
+    top: 0px;
+    left: 658px;
+    filter: blur(60px);
+  }
+}
+
+// ============= /hero-ice-cream =============
+
+// ============= hero-dots =============
+.hero-dots {
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+}
+// ============= /hero-dots =============
+// ============= hero-plate =============
+.hero-plate {
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: absolute;
+    bottom: 13px;
+    left: 32px;
+    z-index: 100;
+  }
+  @media screen and (min-width: 1200px) {
+    bottom: 65px;
+    left: 17px;
+  }
+}
+// ============= /hero-plate =============
+
+// ============= shop-list =============
+.hero-shop-list {
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: absolute;
+    top: 28px;
+    right: 32px;
+  }
+  @media screen and (min-width: 1200px) {
+    top: 56px;
+    right: 16px;
+  }
+}
+.hero-shop-list__item {
+  margin-bottom: 34px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 16px;
+  }
+}
+.hero-shop-list__number {
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 1.21;
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--black-content-color);
+  @media screen and (min-width: 1200px) {
+    font-size: 46px;
+  }
+}
+.hero-shop-list__desc {
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+  text-align: right;
+  color: var(--white-content-color);
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
+}
+
+// ============= /shop-list =============
+
+.hero__text {
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: absolute;
+    z-index: 10;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+    width: 151px;
+    top: 214px;
+    left: 217px;
+    color: var(--white-content-color);
+    opacity: 65%;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 200px;
+    font-size: 14px;
+    top: 368px;
+    left: 256px;
+  }
+
+  //   &::after {
+  //     @media screen and (min-width: 768px) {
+  //       position: absolute;
+  //       content: '';
+  //       display: block;
+  //       width: 45px;
+  //       height: 20px;
+  //       background-image: url(../images/hero-arrow.png);
+  //       background-repeat: no-repeat;
+  //       bottom: -30px;
+  //     }
+  //     @media screen and (min-width: 1200px) {
+  //       bottom: -45px;
+  //     }
+  //   }
+}

@@ -1,0 +1,54 @@
+<section class="section__gallery">
+    <div class="container gallery__container">
+        <div class="gallery__picture">
+            <picture>
+                <source
+                    srcset="
+                        ./images/gallery-img1-desktop.jpg    1x,
+                        ./images/gallery-img1-desktop@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                />
+                <source
+                    srcset="
+                        ./images/gallery-img1-tablet.jpg    1x,
+                        ./images/gallery-img1-tablet@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                />
+                <source
+                    srcset="
+                        ./images/gallery-img1-mobile.jpg    1x,
+                        ./images/gallery-img1-mobile@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                />
+                <img
+                    src="./images/gallery-img1-mobile.jpg"
+                    alt="ice cream composition"
+                    class="gallery__picture"
+                />
+            </picture>
+
+            <img
+                srcset="
+                    ./images/gallery-img2-desktop.jpg    1x,
+                    ./images/gallery-img2-desktop@2x.jpg 2x
+                "
+                src="./images/gallery-img2-desktop.jpg"
+                alt="ice cream composition"
+                class="gallery_image"
+            />
+
+            <img
+                srcset="
+                    ./images/gallery-img3-desktop.jpg    1x,
+                    ./images/gallery-img3-desktop@2x.jpg 2x
+                "
+                src="./images/gallery-img3-desktop.jpg"
+                alt="ice cream composition"
+                class="gallery_image"
+            />
+        </div>
+    </div>
+</section>
