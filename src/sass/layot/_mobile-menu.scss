@@ -21,24 +21,26 @@
 }
 
 .mobile-menu {
+    
     @media screen and (max-width: 1199px) {
-        display: none;
-        position: absolute;
+        
+        position: fixed;
         top: 0;
-        right: 0;
         @include width-height($w: 100%, $h:100%);
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         z-index: 1000;
+
         transform: translateX(100%);
-        transition: transform 250ms var(--timing-function);
+        transition: transform 750ms var(--timing-function);
 
         background-color: var(--green-bg-color);
 
         &.is-open {
             position: fixed;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            transform: translateX(0);
+            transform: translateX(0%);
         }
     }
 
