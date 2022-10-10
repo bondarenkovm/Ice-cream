@@ -974,8 +974,9 @@ a {
   width: 100%;
   padding-left: 20px;
   padding-right: 20px;
+}
 
-.link {
+link {
   text-decoration: none;
 }
 
@@ -1250,7 +1251,7 @@ img {
     width: 200px;
   }
 }
-
+}
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .products__name.cream::before {
     background-image: url("../images/products-ice-cream-mobile@2x.png");
