@@ -42,7 +42,7 @@
   flex-direction: column;
   align-items: center;
 }
-.modal-products-form__text {
+.modal-products-form__title {
   margin-bottom: 22px;
   font-family: 'Seymour One';
   font-style: normal;
@@ -80,7 +80,7 @@
   background-position: center;
 }
 
-.modal-products-list {
+.modal-products-form__list {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
@@ -95,7 +95,7 @@
   color: #131313;
   margin-bottom: 39px;
 }
-.modal-products__item {
+.modal-products-form__item {
   position: relative;
   width: 53px;
   height: 72px;
@@ -103,7 +103,7 @@
   border-radius: 40px;
 }
 
-.modal-products__list--vitamins {
+.modal-products-form__vitamins {
   position: absolute;
   width: 43px;
   height: 43px;
@@ -115,7 +115,7 @@
   border: 2px solid 9CBE8F;
   box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
 }
-.modal-products__list--text {
+.modal-products-form__value {
   display: flex;
   justify-content: center;
   font-family: 'Montserrat';
@@ -129,7 +129,7 @@
   color: #131313;
 }
 
-.modal-products__item--text {
+.modal-products-form__text {
   font-family: 'Montserrat';
   text-transform: capitalize;
   font-style: normal;
@@ -141,7 +141,7 @@
   text-align: center;
   color: #131313;
 }
-.modal-products__text--item {
+.modal-products-form__subtitle {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
@@ -150,24 +150,19 @@
   color: #131313;
   margin-bottom: 24px;
 }
-.modal-products__list--item {
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 176%;
-letter-spacing: 0.04em;
-color: #131313;  
-margin-bottom: 48px; 
-display: block;
+.ingridient__list {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 176%;
+  letter-spacing: 0.04em;
+  color: #131313;
+  margin-bottom: 48px;
+  display: block;
 }
 
-
-
-
-
-
-.modal-products-input__textarea {
+.modal-products-form__textarea {
   height: 84px;
   padding: 11px 16px;
   margin-bottom: 32px;
@@ -182,10 +177,10 @@ display: block;
   font-size: 14px;
   color: #131313;
 }
-.modal-products-item {
+.modal-products-form__labels {
   margin-bottom: 40px;
 }
-.modal-products-input {
+.modal-products__input {
   padding: 11px 16px;
   margin-bottom: 16px;
   width: 100%;
