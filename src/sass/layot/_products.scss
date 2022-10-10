@@ -4,13 +4,13 @@
     padding-top: 60px;
 }
 
-.container {
-    width: 100%;
-    padding-left: 16px;
-    padding-right: 16px;
-    margin-right: auto;
-    margin-left: auto;
-}
+// .container {
+//     width: 100%;
+//     padding-left: 16px;
+//     padding-right: 16px;
+//     margin-right: auto;
+//     margin-left: auto;
+// }
 
 .link {
     text-decoration: none;
@@ -175,11 +175,11 @@ img {
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
-    .container {
-        width: 480px;
-        margin-right: auto;
-        margin-left: auto;
-    }
+    // .container {
+    //     width: 480px;
+    //     margin-right: auto;
+    //     margin-left: auto;
+    // }
 
     .products__item {
         height: 428px;
@@ -218,11 +218,11 @@ img {
 
 // tablet
 @media screen and (min-width: 768px) {
-    .container {
-        width: 768px;
-        padding-left: 32px;
-        padding-right: 32px;
-    }
+    // .container {
+    //     width: 768px;
+    //     padding-left: 32px;
+    //     padding-right: 32px;
+    // }
 
     .products__label {
         font-size: 22px;
@@ -291,9 +291,9 @@ img {
     }
 
     @media screen and (min-width: 1200px) {
-        .container {
-            width: 1200px;
-        }
+        // .container {
+        //     width: 1200px;
+        // }
 
         .products__label {
             font-size: 30px;
@@ -353,11 +353,11 @@ img {
             }
         }
         // ретина
-        .container {
-            width: 1200px;
-            padding-left: 13px;
-            padding-right: 13px;
-        }
+        // .container {
+        //     width: 1200px;
+        //     padding-left: 13px;
+        //     padding-right: 13px;
+        // }
         .products__item {
             // width: calc((100% - 64px) / 3);
             width: 370px;

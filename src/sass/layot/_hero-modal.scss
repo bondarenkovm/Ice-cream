@@ -1,8 +1,8 @@
-.container {
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-}
+// .container {
+//   width: 100%;
+//   margin-right: auto;
+//   margin-left: auto;
+// }
 .backdrop {
   position: fixed;
   top: 0;
@@ -78,11 +78,11 @@
   }
 }
 @media screen and (min-width: 480px) {
-  .container {
-    width: 577px;
-    margin-right: auto;
-    margin-left: auto;
-  }
+  // .container {
+  //   width: 577px;
+  //   margin-right: auto;
+  //   margin-left: auto;
+  // }
   .modal-hero {
     padding: 28px 5px;
   }
