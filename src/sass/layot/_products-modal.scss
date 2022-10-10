@@ -1,0 +1,200 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.modal-products {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 20px;
+  background: #fcfcfc;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+}
+.modal-close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: #fcfcfc;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+  transition-duration: var(--timing-function), fill var(--timing-function);
+}
+.modal-products-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modal-products-form__title {
+  margin-bottom: 22px;
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  align-items: center;
+  text-align: center;
+  color: var(--black-content-color);
+}
+.modal-products-form__item {
+  position: relative;
+  width: 130px;
+  height: 130.6px;
+  border-radius: 50%;
+  background: linear-gradient(
+      0deg,
+      rgba(156, 190, 143, 0.7),
+      rgba(156, 190, 143, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+}
+
+.modal-products__circle--green {
+  position: absolute;
+  width: 130px;
+  height: 130.6px;
+  left: -1%;
+  top: -10%;
+  z-index: 2;
+  border-radius: 50%;
+  background-image: url('../images/products-modal-ice-cream-mobile.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.modal-products-form__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #131313;
+  margin-bottom: 39px;
+}
+.modal-products-form__item {
+  position: relative;
+  width: 53px;
+  height: 72px;
+  border: 2px solid #9cbe8f;
+  border-radius: 40px;
+}
+
+.modal-products-form__vitamins {
+  position: absolute;
+  width: 43px;
+  height: 43px;
+  left: 6%;
+  top: 0;
+  z-index: 2;
+  border-radius: 50%;
+  background: #9cbe8f;
+  border: 2px solid 9CBE8F;
+  box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+}
+.modal-products-form__value {
+  display: flex;
+  justify-content: center;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 28px;
+  transform: translateY(25%);
+  align-items: center;
+  text-align: center;
+  color: #131313;
+}
+
+.modal-products-form__text {
+  font-family: 'Montserrat';
+  text-transform: capitalize;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 28px;
+  transform: translateY(150%);
+  align-items: center;
+  text-align: center;
+  color: #131313;
+}
+.modal-products-form__subtitle {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #131313;
+  margin-bottom: 24px;
+}
+.ingridient__list {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 176%;
+  letter-spacing: 0.04em;
+  color: #131313;
+  margin-bottom: 48px;
+  display: block;
+}
+
+.modal-products-form__textarea {
+  height: 84px;
+  padding: 11px 16px;
+  margin-bottom: 32px;
+  width: 100%;
+  background-color: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  border-radius: 10px;
+  resize: none;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #131313;
+}
+.modal-products-form__labels {
+  margin-bottom: 40px;
+}
+.modal-products__input {
+  padding: 11px 16px;
+  margin-bottom: 16px;
+  width: 100%;
+  background-color: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  border-radius: 10px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #131313;
+}
+@media screen and (min-width: 768px) {
+  .modal-hero {
+    max-width: 568px;
+  }
+}

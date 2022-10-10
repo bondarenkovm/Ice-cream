@@ -1,9 +1,9 @@
-@mixin font($fs: 16px, $fw: inherit, $lh: 1.15, $ls: 0.04em) {
-    font-size: $fs;
-    font-weight: $fw;
-    line-height: $lh / $fs;
-    letter-spacing: $ls;
-}
+// @mixin font($fs: 16px, $fw: inherit, $lh: 1.15, $ls: 0.04em) {
+//     font-size: $fs;
+//     font-weight: $fw;
+//     line-height: $lh / $fs;
+//     letter-spacing: $ls;
+// }
 
 .section__about {
     background-color: var(--green-bg-color);
