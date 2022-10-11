@@ -1017,7 +1017,6 @@ a {
     letter-spacing: 0.02em;
   }
 }
-
 .sections-bg-image {
   margin-left: auto;
   margin-right: auto;
@@ -1051,7 +1050,8 @@ a {
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .sections-bg-image {
     background-image: linear-gradient(to bottom, var(--green-bg-color) 0% 5.6%, transparent 5.6% 64%, var(--green-bg-color) 64% 100%), url("../images/ice-cream-bg4@2x.jpg");
-
+  }
+}
 @-webkit-keyframes cf3FadeInOut {
   0% {
     opacity: 1;
