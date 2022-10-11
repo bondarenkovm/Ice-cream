@@ -11,14 +11,20 @@
 
     @media screen and (max-width: 767px) {
         padding-top: 12px;
+        padding-right: 20px;
+        padding-left: 20px;
     }
 
     @media screen and (max-width: 1199px) {
         padding-top: 20px;
+        padding-right: 32px;
+        padding-left: 32px;
     }
 
     @media screen and (min-width: 1200px) {
         padding-top: 8px;
+        padding-right: 16px;
+        padding-left: 16px;
     }
 }
 
@@ -120,6 +126,7 @@
     &:hover,
     &:focus {
         color: var(--black-content-color);
+        text-decoration: none;
     }
 
 
