@@ -1,3 +1,217 @@
+//  ======================= mom animation  =======================
+.hero-ice-mom {
+  position: absolute;
+  z-index: 1250;
+  animation-name: mom-animation;
+  @media screen and (min-width: 280px) and (max-width: 767px) {
+    top: 320px;
+    right: 78px;
+    animation-duration: 1000ms;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    top: 140px;
+    right: 90px;
+    animation-duration: 1150ms;
+  }
+  @media screen and (min-width: 1200px) {
+    top: 225px;
+    right: 90px;
+    animation-duration: 4150ms;
+  }
+}
+@media screen and (min-width: 280px) and (max-width: 767px) {
+  @keyframes mom-animation {
+    0% {
+      top: 0px;
+      right: 78px;
+    }
+    90% {
+      top: 350px;
+      right: 78px;
+    }
+    100% {
+      top: 320px;
+      right: 78px;
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  @keyframes mom-animation {
+    0% {
+      top: 140px;
+      right: 450px;
+    }
+
+    100% {
+      top: 140px;
+      right: 90px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  @keyframes mom-animation {
+    0% {
+      top: 0px;
+      right: 590px;
+    }
+
+    50% {
+      top: 360px;
+      right: 290px;
+    }
+
+    100% {
+      top: 225px;
+      right: 90px;
+    }
+  }
+}
+
+//  ======================= /mom animation  =======================
+//  ======================= son animation  =======================
+
+.hero-ice-son {
+  line-height: 0;
+  position: absolute;
+  z-index: 2300;
+  animation-name: son-animation;
+  @media screen and (min-width: 280px) and (max-width: 767px) {
+    top: 290px;
+    right: 148px;
+    animation-duration: 950ms;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    top: 90px;
+    left: 450px;
+    animation-duration: 1000ms;
+  }
+  @media screen and (min-width: 1200px) {
+    top: 140px;
+    left: 725px;
+    animation-duration: 4150ms;
+  }
+}
+@media screen and (min-width: 280px) and (max-width: 767px) {
+  @keyframes son-animation {
+    0% {
+      top: 0px;
+      right: 148px;
+    }
+    90% {
+      top: 310px;
+      right: 148px;
+    }
+    100% {
+      top: 290px;
+      right: 148px;
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  @keyframes son-animation {
+    0% {
+      top: 90px;
+      left: 180px;
+    }
+
+    100% {
+      top: 90px;
+      left: 450px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  @keyframes son-animation {
+    0% {
+      top: 0px;
+      left: 0px;
+    }
+
+    50% {
+      top: 420px;
+      left: 390px;
+    }
+
+    100% {
+      top: 140px;
+      left: 725px;
+    }
+  }
+}
+//  ======================= /son animation  =======================
+//  ======================= dad animation  =======================
+.hero-ice-dad {
+  position: absolute;
+  z-index: 2400;
+  animation-name: dad-animation;
+  @media screen and (min-width: 280px) and (max-width: 767px) {
+    top: 250px;
+    right: 88px;
+    animation-duration: 900ms;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    top: 30px;
+    left: 530px;
+    animation-duration: 900ms;
+  }
+  @media screen and (min-width: 1200px) {
+    bottom: 370px;
+    right: 100px;
+    animation-duration: 3750ms;
+  }
+}
+@media screen and (min-width: 280px) and (max-width: 767px) {
+  @keyframes dad-animation {
+    0% {
+      top: 0px;
+      right: 88px;
+    }
+    90% {
+      top: 270px;
+      right: 88px;
+    }
+    100% {
+      top: 250px;
+      right: 88px;
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  @keyframes dad-animation {
+    0% {
+      top: 30px;
+      left: 200px;
+    }
+
+    100% {
+      top: 30px;
+      left: 530px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  @keyframes dad-animation {
+    0% {
+      bottom: 0px;
+      right: 1050px;
+    }
+    33% {
+      bottom: 370px;
+      right: 650px;
+    }
+    66% {
+      bottom: 0px;
+      right: 550px;
+    }
+
+    100% {
+      bottom: 370px;
+      right: 100px;
+    }
+  }
+}
+
+// ============= /dad animation =============
 // ============= прячу не нужное до 767px =============
 @media screen and (max-width: 767px) {
   .hero-plate {
