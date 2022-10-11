@@ -83,18 +83,20 @@
 }
 
 .gallery__desktop--picture {
-    position: absolute;
+    @media screen and (min-width: 1200px) {
+        position: absolute;
 
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
 
-    animation-name: cf3FadeInOut;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-duration: 5s;
-    animation-direction: reverse;
+        animation-name: cf3FadeInOut;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-duration: 5s;
+        animation-direction: reverse;
+    }
 }
 
 .gallery__desktop--animation-hidden {
