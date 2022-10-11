@@ -133,15 +133,15 @@ a {
 @media screen and (min-width: 768px) {
   .about__container {
     width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-left: 2px;
+    padding-right: 2px;
   }
 }
 @media screen and (min-width: 1200px) {
   .about__container {
     width: 1200px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -206,7 +206,7 @@ a {
   .about__content {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-basis: calc((100% - 32px) / 2);
     gap: 32px;
   }
@@ -248,10 +248,16 @@ a {
   position: absolute;
   top: 22;
 }
+@media screen and (min-width: 768px) {
+  .about__picture {
+    width: 334px;
+    height: 330px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .about__picture {
     top: 32;
-    left: 5;
+    left: 7;
     width: 490px;
     height: 490px;
   }
@@ -270,9 +276,11 @@ a {
 }
 @media screen and (min-width: 768px) {
   .about__description {
+    text-align: left;
     margin-left: 0;
     margin-right: 0;
     width: 334px;
+    margin-bottom: 8px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -303,6 +311,7 @@ a {
     margin-right: 0;
     width: 334px;
     margin-bottom: 8px;
+    text-align: left;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -333,6 +342,7 @@ a {
     margin-left: 0;
     margin-right: 0;
     width: 334px;
+    text-align: left;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -359,9 +369,8 @@ a {
   border-radius: 10px;
   border: none;
   cursor: pointer;
-  font-weight: 600;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.04em;
   color: #131313;
   outline: none;
@@ -372,6 +381,14 @@ a {
 .about__button:focus {
   color: #fcfcfc;
   fill: #fcfcfc;
+}
+@media screen and (min-width: 768px) {
+  .about__button {
+    margin-left: 0;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+  }
 }
 @media screen and (min-width: 1200px) {
   .about__button {
@@ -529,6 +546,9 @@ a {
 @media screen and (min-width: 768px) {
   .advantages__description {
     width: 155px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -997,6 +1017,34 @@ a {
     letter-spacing: 0.02em;
   }
 }
+@-webkit-keyframes cf3FadeInOut {
+  0% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes cf3FadeInOut {
+  0% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .gallery__container {
   width: 100%;
 }
@@ -1020,8 +1068,8 @@ a {
 @media screen and (min-width: 1200px) {
   .gallery__container {
     width: 1200px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 93px;
+    padding-right: 93px;
   }
 }
 
@@ -1031,7 +1079,7 @@ a {
 
 .gallery__picture {
   position: absolute;
-  width: 279px;
+  width: calc(100% - 32px);
   height: auto;
   left: 50%;
   top: -18%;
@@ -1039,28 +1087,63 @@ a {
   border-radius: 7.4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+@media screen and (min-width: 480px) {
+  .gallery__picture {
+    width: 279px;
+  }
+}
 @media screen and (min-width: 768px) {
   .gallery__picture {
     position: static;
     left: 0;
     top: 0;
     transform: translateX(0);
+    margin-left: auto;
+    margin-right: auto;
     width: 704px;
     border-radius: 18px;
   }
 }
 @media screen and (min-width: 1200px) {
   .gallery__picture {
+    position: relative;
+    overflow: hidden;
     width: 1013px;
+    height: 422px;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
     border-radius: 28px;
+    text-align: center;
   }
 }
 
-.gallery_image {
+.gallery__desktop--picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  -webkit-animation-name: cf3FadeInOut;
+          animation-name: cf3FadeInOut;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  animation-direction: reverse;
+}
+
+.gallery__desktop--animation-hidden {
   display: none;
+}
+@media screen and (min-width: 1200px) {
+  .gallery__desktop--animation-hidden {
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%, 0);
+  }
 }
 
 .container__slider {
