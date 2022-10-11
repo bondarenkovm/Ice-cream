@@ -225,7 +225,7 @@ a {
   margin-right: auto;
   width: 278px;
   height: 278px;
-  background-color: var(--yellow-content-color);
+  background-color: var(--about-yellow-color);
   border-radius: 50%;
   margin-bottom: 62px;
 }
@@ -1119,21 +1119,23 @@ a {
   }
 }
 
-.gallery__desktop--picture {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-  -webkit-animation-name: cf3FadeInOut;
-          animation-name: cf3FadeInOut;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  animation-direction: reverse;
+@media screen and (min-width: 1200px) {
+  .gallery__desktop--picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    -webkit-animation-name: cf3FadeInOut;
+            animation-name: cf3FadeInOut;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+    animation-direction: reverse;
+  }
 }
 
 .gallery__desktop--animation-hidden {
