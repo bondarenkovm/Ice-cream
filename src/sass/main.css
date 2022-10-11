@@ -2966,6 +2966,10 @@ element.style {
   pointer-events: auto;
 }
 
+label.modal-product-form__label {
+  width: 100%;
+}
+
 .modal-products {
   position: absolute;
   top: 50%;
@@ -3000,7 +3004,10 @@ element.style {
     padding: 28px 5px;
   }
   .modal-products-form__labels {
-    max-width: 488px;
+    max-width: 368px;
+  }
+  .modal-products {
+    width: 450px;
   }
   .ingridient__item {
     min-width: 368px;
@@ -3012,11 +3019,22 @@ element.style {
   }
 }
 @media screen and (max-width: 480px) {
+  .modal-products {
+    width: 90%;
+  }
   .modal-products-form__labels {
     max-width: 480px;
   }
   .ingridient__item {
     min-width: 240px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal-products {
+    width: 568px;
+  }
+  .ingridient__item {
+    min-width: 488px;
   }
 }
 .modal-products-form {
@@ -3158,15 +3176,12 @@ element.style {
   border: 1px solid #84a178;
   border-radius: 10px;
   resize: none;
+  outline: none;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   color: #131313;
-}
-
-.modal-products-form__labels {
-  margin-bottom: 40px;
 }
 
 .modal-products__input {
