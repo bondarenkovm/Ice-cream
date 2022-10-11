@@ -1295,6 +1295,7 @@ element.style {
   background-image: url("../images/ice-cream-bg2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .products__label {
@@ -1820,16 +1821,35 @@ element.style {
   stroke: var(--white-content-color);
 }
 
+@media screen and (min-width: 321px) and (max-width: 479px) {
+  .hero-ice-mom {
+    display: none;
+  }
+  .hero-ice-son {
+    display: none;
+  }
+  .hero-ice-dad {
+    display: none;
+  }
+}
 .hero-ice-mom {
   position: absolute;
   z-index: 1250;
   -webkit-animation-name: mom-animation;
           animation-name: mom-animation;
 }
-@media screen and (min-width: 280px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 479px) {
   .hero-ice-mom {
     top: 320px;
     right: 78px;
+    -webkit-animation-duration: 1000ms;
+            animation-duration: 1000ms;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .hero-ice-mom {
+    top: 320px;
+    right: 188px;
     -webkit-animation-duration: 1000ms;
             animation-duration: 1000ms;
   }
@@ -1851,7 +1871,7 @@ element.style {
   }
 }
 
-@media screen and (min-width: 280px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 479px) {
   @-webkit-keyframes mom-animation {
     0% {
       top: 0px;
@@ -1878,6 +1898,36 @@ element.style {
     100% {
       top: 320px;
       right: 78px;
+    }
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  @-webkit-keyframes mom-animation {
+    0% {
+      top: 0px;
+      right: 188px;
+    }
+    90% {
+      top: 350px;
+      right: 188px;
+    }
+    100% {
+      top: 320px;
+      right: 188px;
+    }
+  }
+  @keyframes mom-animation {
+    0% {
+      top: 0px;
+      right: 188px;
+    }
+    90% {
+      top: 350px;
+      right: 188px;
+    }
+    100% {
+      top: 320px;
+      right: 188px;
     }
   }
 }
@@ -1940,10 +1990,18 @@ element.style {
   -webkit-animation-name: son-animation;
           animation-name: son-animation;
 }
-@media screen and (min-width: 280px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 479px) {
   .hero-ice-son {
     top: 290px;
     right: 148px;
+    -webkit-animation-duration: 1000ms;
+            animation-duration: 1000ms;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .hero-ice-son {
+    top: 290px;
+    right: 258px;
     -webkit-animation-duration: 950ms;
             animation-duration: 950ms;
   }
@@ -1965,7 +2023,7 @@ element.style {
   }
 }
 
-@media screen and (min-width: 280px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 479px) {
   @-webkit-keyframes son-animation {
     0% {
       top: 0px;
@@ -1992,6 +2050,36 @@ element.style {
     100% {
       top: 290px;
       right: 148px;
+    }
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  @-webkit-keyframes son-animation {
+    0% {
+      top: 0px;
+      right: 258px;
+    }
+    90% {
+      top: 310px;
+      right: 258px;
+    }
+    100% {
+      top: 290px;
+      right: 258px;
+    }
+  }
+  @keyframes son-animation {
+    0% {
+      top: 0px;
+      right: 258px;
+    }
+    90% {
+      top: 310px;
+      right: 258px;
+    }
+    100% {
+      top: 290px;
+      right: 258px;
     }
   }
 }
@@ -2053,10 +2141,18 @@ element.style {
   -webkit-animation-name: dad-animation;
           animation-name: dad-animation;
 }
-@media screen and (min-width: 280px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 479px) {
   .hero-ice-dad {
     top: 250px;
     right: 88px;
+    -webkit-animation-duration: 900ms;
+            animation-duration: 900ms;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .hero-ice-dad {
+    top: 250px;
+    right: 198px;
     -webkit-animation-duration: 900ms;
             animation-duration: 900ms;
   }
@@ -2078,7 +2174,7 @@ element.style {
   }
 }
 
-@media screen and (min-width: 280px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 479px) {
   @-webkit-keyframes dad-animation {
     0% {
       top: 0px;
@@ -2105,6 +2201,36 @@ element.style {
     100% {
       top: 250px;
       right: 88px;
+    }
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  @-webkit-keyframes dad-animation {
+    0% {
+      top: 0px;
+      right: 198px;
+    }
+    90% {
+      top: 270px;
+      right: 198px;
+    }
+    100% {
+      top: 250px;
+      right: 198px;
+    }
+  }
+  @keyframes dad-animation {
+    0% {
+      top: 0px;
+      right: 198px;
+    }
+    90% {
+      top: 270px;
+      right: 198px;
+    }
+    100% {
+      top: 250px;
+      right: 198px;
     }
   }
 }
@@ -2184,19 +2310,21 @@ element.style {
 }
 .hero {
   background-color: var(--green-bg-color);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero__container {
   position: relative;
-  padding-top: 61px;
-  padding-left: 20px;
+  max-width: 480px;
+  width: 100%;
   height: 453px;
-  margin-left: auto;
-  margin-right: auto;
+  padding-left: 20px;
+  padding-top: 61px;
 }
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
   .hero__container {
-    max-width: 320px;
+    max-width: 480px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -2343,9 +2471,19 @@ element.style {
 .hero-ice-cream {
   position: absolute;
   display: block;
-  top: 245px;
-  left: 82px;
   z-index: 300;
+}
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .hero-ice-cream {
+    top: 245px;
+    left: 28%;
+  }
+}
+@media screen and (min-width: 480px) {
+  .hero-ice-cream {
+    top: 245px;
+    left: 136px;
+  }
 }
 @media screen and (min-width: 768px) {
   .hero-ice-cream {
@@ -2365,11 +2503,21 @@ element.style {
   height: 218px;
   position: absolute;
   display: block;
-  top: 245px;
-  left: 82px;
   z-index: 280;
   background: rgba(252, 252, 252, 0.44);
   filter: blur(26.8405px);
+}
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .hero-ice-cream_bg {
+    top: 242px;
+    left: 28%;
+  }
+}
+@media screen and (min-width: 480px) {
+  .hero-ice-cream_bg {
+    top: 242px;
+    left: 136px;
+  }
 }
 @media screen and (min-width: 768px) {
   .hero-ice-cream_bg {
@@ -2384,8 +2532,8 @@ element.style {
   .hero-ice-cream_bg {
     width: 477px;
     height: 590px;
-    top: 0px;
-    left: 658px;
+    top: 27px;
+    left: 651px;
     filter: blur(60px);
   }
 }
@@ -2397,7 +2545,16 @@ element.style {
   bottom: 0;
   z-index: 0;
 }
+@media screen and (max-width: 767px) {
+  .hero-dots {
+    max-width: 480px;
+    width: 100%;
+  }
+}
 
+.hero-plate {
+  display: none;
+}
 @media screen and (min-width: 768px) {
   .hero-plate {
     display: block;
@@ -2414,6 +2571,9 @@ element.style {
   }
 }
 
+.hero-shop-list {
+  display: none;
+}
 @media screen and (min-width: 768px) {
   .hero-shop-list {
     display: block;
@@ -2491,6 +2651,33 @@ element.style {
     left: 256px;
   }
 }
+@media screen and (min-width: 768px) {
+  .hero__text::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 45px;
+    height: 20px;
+    background-image: url(../images/hero-arrow.png);
+    background-repeat: no-repeat;
+    bottom: -30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__text::after {
+    bottom: -45px;
+  }
+}
+
+.modal-hero-container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.modal-hero-form__label {
+  width: 100%;
+}
 
 .backdrop {
   position: fixed;
@@ -2542,6 +2729,7 @@ element.style {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+  cursor: pointer;
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -2572,6 +2760,11 @@ element.style {
   }
 }
 @media screen and (min-width: 480px) {
+  .modal-hero-container {
+    width: 577px;
+    margin-right: auto;
+    margin-left: auto;
+  }
   .modal-hero {
     padding: 28px 5px;
   }
@@ -2599,6 +2792,7 @@ element.style {
 
 .modal-hero-form__ice-cream {
   position: relative;
+  display: block;
   width: 132px;
   height: 135px;
   padding-top: 95px;
@@ -2606,6 +2800,10 @@ element.style {
   border: 2px solid #96af8c;
   filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
   border-radius: 15.7808px;
+  transition-duration: 1000ms;
+}
+.modal-hero-form__ice-cream:focus, .modal-hero-form__ice-cream:hover {
+  background: linear-gradient(0deg, rgba(156, 190, 143, 0.7019607843), rgba(156, 190, 143, 0.7019607843)), #d9d9d9;
 }
 
 .modal-hero-form__ice-coffee {
@@ -2614,10 +2812,12 @@ element.style {
   height: 135px;
   padding-top: 95px;
   padding-bottom: 20px;
-  background: #efd478;
   border: 2px solid #efd478;
   box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
   border-radius: 15.7808px;
+}
+.modal-hero-form__ice-coffee:focus, .modal-hero-form__ice-coffee:hover {
+  background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #d9d9d9;
 }
 
 .modal-hero-form__ice-milkshakes {
@@ -2629,6 +2829,10 @@ element.style {
   border: 2px solid #d6936d;
   filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
   border-radius: 15.7808px;
+  transition-duration: 500ms;
+}
+.modal-hero-form__ice-milkshakes:focus, .modal-hero-form__ice-milkshakes:hover {
+  background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #d9d9d9;
 }
 
 .modal-hero-form__img--green {
@@ -2636,9 +2840,12 @@ element.style {
   width: 130px;
   height: 130.6px;
   left: 0;
-  top: -50%;
-  z-index: 2;
+  top: -60%;
+  z-index: 3;
   border-radius: 50%;
+  background-image: url("../images/products-ice-cream-mobile.png");
+  background-size: cover;
+  background-position: center;
 }
 
 .modal-hero__circle--green {
@@ -2665,6 +2872,19 @@ element.style {
   box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
 }
 
+.modal-hero-form__img--yellow {
+  position: absolute;
+  width: 130px;
+  height: 130.6px;
+  left: 0;
+  top: -60%;
+  z-index: 3;
+  border-radius: 50%;
+  background-image: url("../images/products-ice-coffee-mobile.png");
+  background-size: cover;
+  background-position: center;
+}
+
 .modal-hero-form__circle--red {
   position: absolute;
   width: 130px;
@@ -2675,6 +2895,19 @@ element.style {
   border-radius: 50%;
   background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #d9d9d9;
   box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+}
+
+.modal-hero__img--red {
+  position: absolute;
+  width: 130px;
+  height: 130.6px;
+  left: 0;
+  top: -60%;
+  z-index: 3;
+  border-radius: 50%;
+  background-image: url("../images/products-milkshake-mobile.png");
+  background-size: cover;
+  background-position: center;
 }
 
 .modal-hero-form__textarea {
@@ -2690,6 +2923,8 @@ element.style {
   font-weight: 400;
   font-size: 14px;
   color: #131313;
+  resize: none;
+  outline: none;
 }
 
 .modal-hero-item {
@@ -2708,6 +2943,7 @@ element.style {
   font-weight: 400;
   font-size: 14px;
   color: #131313;
+  outline: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -2733,7 +2969,7 @@ element.style {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  padding: 20px;
+  padding: 28px 20px 32px 20px;
   background: #fcfcfc;
   border: 2px solid #f8d24e;
   border-radius: 10px;
@@ -2756,6 +2992,30 @@ element.style {
   transition-duration: var(--timing-function), fill var(--timing-function);
 }
 
+@media screen and (min-width: 480px) {
+  .modal-products {
+    padding: 28px 5px;
+  }
+  .modal-products-form__labels {
+    max-width: 488px;
+  }
+  .ingridient__item {
+    min-width: 368px;
+  }
+  .modal-products__circle--green {
+    background-image: url("../images/products-modal-ice-cream-desktop.png");
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .modal-products-form__labels {
+    max-width: 480px;
+  }
+  .ingridient__item {
+    min-width: 240px;
+  }
+}
 .modal-products-form {
   display: flex;
   flex-direction: column;
@@ -2774,7 +3034,7 @@ element.style {
   color: var(--black-content-color);
 }
 
-.modal-products-form__item {
+.modal-products-form-circle__item {
   position: relative;
   width: 130px;
   height: 130.6px;
@@ -2787,7 +3047,7 @@ element.style {
   position: absolute;
   width: 130px;
   height: 130.6px;
-  left: -1%;
+  left: 0;
   top: -10%;
   z-index: 2;
   border-radius: 50%;
@@ -2831,6 +3091,11 @@ element.style {
   background: #9cbe8f;
   border: 2px solid 9CBE8F;
   box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+}
+
+.ingridient__item {
+  display: flex;
+  justify-content: space-between;
 }
 
 .modal-products-form__value {
@@ -2879,7 +3144,6 @@ element.style {
   letter-spacing: 0.04em;
   color: #131313;
   margin-bottom: 48px;
-  display: block;
 }
 
 .modal-products-form__textarea {
@@ -2914,13 +3178,9 @@ element.style {
   font-weight: 400;
   font-size: 14px;
   color: #131313;
+  outline: none;
 }
 
-@media screen and (min-width: 768px) {
-  .modal-hero {
-    max-width: 568px;
-  }
-}
 .backdrop {
   position: fixed;
   top: 0;
