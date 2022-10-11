@@ -1693,6 +1693,354 @@ element.style {
   stroke: var(--white-content-color);
 }
 
+.hero-ice-mom {
+  position: absolute;
+  z-index: 1250;
+  -webkit-animation-name: mom-animation;
+          animation-name: mom-animation;
+}
+@media screen and (min-width: 280px) and (max-width: 767px) {
+  .hero-ice-mom {
+    top: 320px;
+    right: 78px;
+    -webkit-animation-duration: 1000ms;
+            animation-duration: 1000ms;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero-ice-mom {
+    top: 140px;
+    right: 90px;
+    -webkit-animation-duration: 1150ms;
+            animation-duration: 1150ms;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-ice-mom {
+    top: 225px;
+    right: 90px;
+    -webkit-animation-duration: 4150ms;
+            animation-duration: 4150ms;
+  }
+}
+
+@media screen and (min-width: 280px) and (max-width: 767px) {
+  @-webkit-keyframes mom-animation {
+    0% {
+      top: 0px;
+      right: 78px;
+    }
+    90% {
+      top: 350px;
+      right: 78px;
+    }
+    100% {
+      top: 320px;
+      right: 78px;
+    }
+  }
+  @keyframes mom-animation {
+    0% {
+      top: 0px;
+      right: 78px;
+    }
+    90% {
+      top: 350px;
+      right: 78px;
+    }
+    100% {
+      top: 320px;
+      right: 78px;
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  @-webkit-keyframes mom-animation {
+    0% {
+      top: 140px;
+      right: 450px;
+    }
+    100% {
+      top: 140px;
+      right: 90px;
+    }
+  }
+  @keyframes mom-animation {
+    0% {
+      top: 140px;
+      right: 450px;
+    }
+    100% {
+      top: 140px;
+      right: 90px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  @-webkit-keyframes mom-animation {
+    0% {
+      top: 0px;
+      right: 590px;
+    }
+    50% {
+      top: 360px;
+      right: 290px;
+    }
+    100% {
+      top: 225px;
+      right: 90px;
+    }
+  }
+  @keyframes mom-animation {
+    0% {
+      top: 0px;
+      right: 590px;
+    }
+    50% {
+      top: 360px;
+      right: 290px;
+    }
+    100% {
+      top: 225px;
+      right: 90px;
+    }
+  }
+}
+.hero-ice-son {
+  line-height: 0;
+  position: absolute;
+  z-index: 2300;
+  -webkit-animation-name: son-animation;
+          animation-name: son-animation;
+}
+@media screen and (min-width: 280px) and (max-width: 767px) {
+  .hero-ice-son {
+    top: 290px;
+    right: 148px;
+    -webkit-animation-duration: 950ms;
+            animation-duration: 950ms;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero-ice-son {
+    top: 90px;
+    left: 450px;
+    -webkit-animation-duration: 1000ms;
+            animation-duration: 1000ms;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-ice-son {
+    top: 140px;
+    left: 725px;
+    -webkit-animation-duration: 4150ms;
+            animation-duration: 4150ms;
+  }
+}
+
+@media screen and (min-width: 280px) and (max-width: 767px) {
+  @-webkit-keyframes son-animation {
+    0% {
+      top: 0px;
+      right: 148px;
+    }
+    90% {
+      top: 310px;
+      right: 148px;
+    }
+    100% {
+      top: 290px;
+      right: 148px;
+    }
+  }
+  @keyframes son-animation {
+    0% {
+      top: 0px;
+      right: 148px;
+    }
+    90% {
+      top: 310px;
+      right: 148px;
+    }
+    100% {
+      top: 290px;
+      right: 148px;
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  @-webkit-keyframes son-animation {
+    0% {
+      top: 90px;
+      left: 180px;
+    }
+    100% {
+      top: 90px;
+      left: 450px;
+    }
+  }
+  @keyframes son-animation {
+    0% {
+      top: 90px;
+      left: 180px;
+    }
+    100% {
+      top: 90px;
+      left: 450px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  @-webkit-keyframes son-animation {
+    0% {
+      top: 0px;
+      left: 0px;
+    }
+    50% {
+      top: 420px;
+      left: 390px;
+    }
+    100% {
+      top: 140px;
+      left: 725px;
+    }
+  }
+  @keyframes son-animation {
+    0% {
+      top: 0px;
+      left: 0px;
+    }
+    50% {
+      top: 420px;
+      left: 390px;
+    }
+    100% {
+      top: 140px;
+      left: 725px;
+    }
+  }
+}
+.hero-ice-dad {
+  position: absolute;
+  z-index: 2400;
+  -webkit-animation-name: dad-animation;
+          animation-name: dad-animation;
+}
+@media screen and (min-width: 280px) and (max-width: 767px) {
+  .hero-ice-dad {
+    top: 250px;
+    right: 88px;
+    -webkit-animation-duration: 900ms;
+            animation-duration: 900ms;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero-ice-dad {
+    top: 30px;
+    left: 530px;
+    -webkit-animation-duration: 900ms;
+            animation-duration: 900ms;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-ice-dad {
+    bottom: 370px;
+    right: 100px;
+    -webkit-animation-duration: 3750ms;
+            animation-duration: 3750ms;
+  }
+}
+
+@media screen and (min-width: 280px) and (max-width: 767px) {
+  @-webkit-keyframes dad-animation {
+    0% {
+      top: 0px;
+      right: 88px;
+    }
+    90% {
+      top: 270px;
+      right: 88px;
+    }
+    100% {
+      top: 250px;
+      right: 88px;
+    }
+  }
+  @keyframes dad-animation {
+    0% {
+      top: 0px;
+      right: 88px;
+    }
+    90% {
+      top: 270px;
+      right: 88px;
+    }
+    100% {
+      top: 250px;
+      right: 88px;
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  @-webkit-keyframes dad-animation {
+    0% {
+      top: 30px;
+      left: 200px;
+    }
+    100% {
+      top: 30px;
+      left: 530px;
+    }
+  }
+  @keyframes dad-animation {
+    0% {
+      top: 30px;
+      left: 200px;
+    }
+    100% {
+      top: 30px;
+      left: 530px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  @-webkit-keyframes dad-animation {
+    0% {
+      bottom: 0px;
+      right: 1050px;
+    }
+    33% {
+      bottom: 370px;
+      right: 650px;
+    }
+    66% {
+      bottom: 0px;
+      right: 550px;
+    }
+    100% {
+      bottom: 370px;
+      right: 100px;
+    }
+  }
+  @keyframes dad-animation {
+    0% {
+      bottom: 0px;
+      right: 1050px;
+    }
+    33% {
+      bottom: 370px;
+      right: 650px;
+    }
+    66% {
+      bottom: 0px;
+      right: 550px;
+    }
+    100% {
+      bottom: 370px;
+      right: 100px;
+    }
+  }
+}
 @media screen and (max-width: 767px) {
   .hero-plate {
     display: none;
