@@ -1,5 +1,10 @@
+:root {
+  --contacts-border-color: #e1e1e1;
+  --contacts-color-text-time: #ababab;
+  --contacts-bg-card-color: #ffffff;
+}
 .contacts {
-  background-color: #84a178;
+  background-color: var(--green-bg-color);
   padding-bottom: 40px;
 }
 
@@ -17,27 +22,26 @@
 }
 
 .contacts__item {
-  background-color: #fcfcfc;
+  background-color: var(--white-content-color);
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
 }
 
 .contacts__text {
   display: inline-block;
-  background-color: #f8d24e;
+  background-color: var(--yellow-content-color);
   border-radius: 4px;
   padding-left: 24px;
   padding-right: 24px;
   font-weight: 500;
   @include font-contacts(12px, 22px);
   letter-spacing: 0.04em;
-  color: #131313;
+  color: var(--black-content-color);
   margin-bottom: 20px;
 }
 
 .address {
   margin-bottom: 48px;
-  position: relative;
 }
 
 .address__text {
@@ -45,32 +49,24 @@
   font-weight: 500;
   @include font-contacts(12px, 22px);
   letter-spacing: 0.04em;
-  color: #131313;
+  color: var(--black-content-color);
   margin-bottom: 8px;
 }
 
 .address__link {
+  position: relative;
   font-style: normal;
   font-weight: 500;
   @include font-contacts(12px, 22px);
   letter-spacing: 0.04em;
-  color: #d6936d;
+  color: var(--orange-products-bg-color);
   text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 400ms var(--timing-function);
 
-  //   transition: text-decoration 2500ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
-    text-decoration-line: underline;
-  }
-
-  &::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    border: 1px solid #e1e1e1;
-    background-color: #e1e1e1;
-    left: 0;
-    bottom: -24px;
+    border-color: var(--orange-products-bg-color);
   }
 }
 
@@ -86,20 +82,30 @@
 .work-list__day {
   font-weight: 500;
   @include font-contacts(12px, 22px);
-  color: #131313;
-}
-
-.work-list__time {
-  font-weight: 500;
-  @include font-contacts(12px, 22px);
-  color: #ababab;
+  color: var(--black-content-color);
 
   &::after {
     content: '';
     position: absolute;
     width: 100%;
-    border: 1px solid #e1e1e1;
-    background-color: #e1e1e1;
+    border: 1px solid var(--contacts-border-color);
+    background-color: var(--contacts-border-color);
+    left: 0;
+    top: -24px;
+  }
+}
+
+.work-list__time {
+  font-weight: 500;
+  @include font-contacts(12px, 22px);
+  color: var(--contacts-color-text-time);
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    border: 1px solid var(--contacts-border-color);
+    background-color: var(--contacts-border-color);
     left: 0;
     bottom: -24px;
   }
@@ -108,7 +114,7 @@
 .contacts-page__info {
   font-weight: 500;
   @include font-contacts(12px, 18px);
-  color: #131313;
+  color: var(--black-content-color);
   text-decoration: none;
 }
 
@@ -118,15 +124,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f8d24e;
+  background-color: var(--yellow-content-color);
   border-radius: 10px;
   border: none;
   cursor: pointer;
 
   font-weight: 600;
   @include font-contacts(14px, 18px);
-  color: #131313;
+  color: var(--black-content-color);
   outline: none;
+  transition: background-color 400ms var(--timing-function),
+    color 400ms var(--timing-function);
 
   &:hover,
   &:focus {
@@ -134,8 +142,7 @@
   }
 
   &:focus {
-    color: #fcfcfc;
-    fill: #fcfcfc;
+    color: var(--white-content-color);
   }
 }
 
@@ -146,28 +153,36 @@
   justify-content: center;
   align-items: center;
   background-color: transparent;
-  border: 2px solid #f8d24e;
+  border: 2px solid var(--yellow-content-color);
   border-radius: 10px;
   cursor: pointer;
 
   font-weight: 600;
   @include font-contacts(14px, 18px);
-  color: #131313;
+  color: var(--black-content-color);
   outline: none;
-
+  transition: border 400ms var(--timing-function),
+    color 400ms var(--timing-function);
   &:hover,
   &:focus {
     border: 2px solid #0a8817;
   }
 
   &:focus {
-    color: #fcfcfc;
-    fill: #fcfcfc;
+    color: var(--white-content-color);
   }
 }
 
 .contacts-btn-list__icon {
   margin-left: 6px;
+  height: 12;
+  width: 12;
+  stroke: var(--black-content-color);
+  transition: stroke 400ms var(--timing-function);
+  .contacts-btn-list__button-locations:focus &,
+  .contacts-btn-list__button-franchise:focus & {
+    stroke: var(--white-content-color);
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -229,10 +244,6 @@
 
   .address__link {
     @include font-contacts(14px, 26px);
-
-    &::after {
-      bottom: -32px;
-    }
   }
 
   .work-list {
@@ -245,6 +256,9 @@
 
   .work-list__day {
     @include font-contacts(14px, 26px);
+    &::after {
+      top: -32px;
+    }
   }
 
   .work-list__time {
@@ -279,7 +293,7 @@
   .contacts__item {
     width: 368px;
     padding: 40px 40px;
-    background-color: #ffffff;
+    background-color: var(--contacts-bg-card-color);
     flex-basis: calc((100% - 64px) / 3);
   }
 

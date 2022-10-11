@@ -1,11 +1,26 @@
-$(document).ready(function(){
-    $('.slider').slick({
-        dots: true,
-        slidesToShow: 1,
-        arrows: false,
-        infinite: true,
-        fade: true,
-        autoplay: true,
-        autoplaySpeed: 2500,
+$(document).ready(function () {
+  $(".slider ").slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      arrows: true,
+      dots: true,
+      fade: true,
+      pauseOnHover: false,
+      responsive: [
+          {
+              breakpoint: 768,
+              settings: {
+                  slidesToShow: 1,
+              },
+          },
+          {
+              breakpoint: 520,
+              settings: {
+                  slidesToShow: 1,
+              },
+          },
+      ],
   });
 });
