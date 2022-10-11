@@ -1,0 +1,96 @@
+.section__advantages {
+    background-color: var(--green-bg-color);
+    padding-bottom: 60px;
+}
+
+.advantages__container {
+    width: 100%;
+
+    @media screen and (min-width: 320px) {
+        width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    @media screen and (min-width: 768px) {
+        width: 768px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.advantages__item {
+    &::before {
+        content: "";
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 16px;
+        width: 50px;
+        height: 50px;
+        background-repeat: no-repeat;
+        background-color: var(--yellow-content-color);
+        border-radius: 50%;
+        background-position: 50% 50%;
+    }
+    &:not(:last-child) {
+        margin-bottom: 22px;
+    }
+}
+
+.advantages__item--cow {
+    &::before {
+        background-image: url("../images/advantages-cow.png");
+    }
+}
+
+.advantages__item--weight {
+    &::before {
+        background-image: url("../images/advantages-weight.png");
+    }
+}
+
+.advantages__item--ice-cream {
+    &::before {
+        background-image: url("../images/advantages-ice-cream.png");
+    }
+}
+
+.advantages__value {
+    font-family: "roboto";
+    @include font(36px, 700, 42px);
+
+    color: var(--white-content-color);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+.advantages__description {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    @include font(12px, 700, 20px);
+    color: var(--white-content-color);
+    text-align: center;
+    width: 230px;
+}

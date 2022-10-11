@@ -1,0 +1,215 @@
+// buttons стрілка 
+.button {
+
+    background-color: transparent;
+    border: transparent;
+    padding: 0;
+    outline: none;
+
+
+    transition: transform 500ms ease-in-out;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+
+    &:focus {
+        transform: scale(1.5);
+    }
+}
+
+// десктопна версія кнопки How it’s made? 
+.btn-d {
+
+    font-family: 'Montserrat';
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #F8D24E;
+    border-color: transparent;
+    background-color: transparent;
+    transition: color 1000ms ease;
+    text-decoration: underline;
+    outline: none;
+
+
+    &:hover {
+        color: #0A8817;
+    }
+
+    &:focus {
+        color: #FCFCFC;
+
+    }
+
+    ;
+
+}
+
+// планшетна,
+// мобільна версія кнопки How it’s made? 
+.btn-t-m {
+    font-family: 'Montserrat';
+    text-decoration: underline;
+
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 9.75px;
+
+    color: #F8D24E;
+    border-color: transparent;
+    background-color: transparent;
+
+    transition: color 1000ms ease-in-out;
+    outline: none;
+
+    &:hover {
+        color: #0A8817;
+    }
+
+    &:focus {
+        color: #FCFCFC;
+
+    }
+
+}
+
+// десктопна версія кнопки Products 
+.product {
+
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    color: #000000;
+    background-color: transparent;
+    border: 2px solid #F8D24E;
+    border-radius: 10px;
+    padding: 12px 34px;
+    outline: none;
+    transform: rotate(0deg);
+    transition: border-color 1000ms ease-in-out, color 1000ms ease-in-out, transform 1000ms ease-in-out;
+
+    &:hover {
+        border-color: #0A8817;
+        transform: rotate(360deg);
+    }
+
+    &:focus {
+        color: #FCFCFC;
+        border-color: #0A8817;
+        transform: rotate(360deg);
+
+    }
+}
+
+// планшетна,
+// мобільна версія кнопки Products 
+.product {
+font-family: Montserrat;
+font-size: 8px;
+font-weight: 600;
+line-height: 9.75px;
+letter-spacing: 0em;
+text-align: center;
+
+color: #000000;
+background-color: transparent;
+border: 2px solid #F8D24E;
+border-radius: 8px;
+padding: 6px 12px;
+outline: none;
+transform: rotate(0deg);
+transition: border-color 1000ms ease-in-out,
+color 1000ms ease-in-out,
+transform 1000ms ease-in-out;
+
+&:hover {
+    border-color: #0A8817;
+    transform: rotate(360deg);
+
+}
+
+&:focus {
+    color: #FCFCFC;
+    border-color: #0A8817;
+    transform: rotate(360deg);
+
+}
+}
+
+// для кнопок Read more,
+// Our Locations,
+// Buy now 
+.read-btn {
+
+    display: flex;
+    align-items: center;
+
+
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+
+    padding: 12px 34px;
+    color: #000000;
+    border: transparent;
+    background-color: #F8D24E;
+    border-radius: 10px;
+    outline: none;
+    transition: background-color 1000ms ease-in-out, transform 1000ms ease-in-out;
+
+    &:hover {
+        color: #000000;
+        background-color: #0A8817;
+        transform: scale(1.2);
+
+    }
+
+    &:focus {
+        color: #FCFCFC;
+        background-color: #0A8817;
+        transform: scale(1.2);
+
+    }
+}
+
+.svg-icon {
+    fill: currentColor;
+    margin-left: 5px;
+}
+
+// для кнопок Franchise 
+.franchise-btn {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+
+    background-color: transparent;
+    border: 2px solid #F8D24E;
+    border-radius: 10px;
+    padding: 12px 46px;
+    outline: none;
+    transform: rotate(0deg);
+    transition: border-color 1000ms ease-in-out, color 1000ms ease-in-out, transform 1000ms ease-in-out;
+
+    &:hover {
+        border-color: #0A8817;
+        transform: rotate(360deg);
+
+    }
+
+    &:focus {
+        color: #FCFCFC;
+        border-color: #0A8817;
+        transform: rotate(360deg);
+
+    }
+}

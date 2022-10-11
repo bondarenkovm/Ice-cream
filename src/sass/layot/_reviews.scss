@@ -1,0 +1,125 @@
+/* body {
+  font-size: 16px;
+  line-height: 186%;
+  padding-top: 100px;
+} */
+
+.container__slider {
+    max-width: 1168px;
+    padding-top: 128px;
+    margin: 0 auto;
+}
+
+.slider__img {
+    margin: 0 auto;
+    padding-bottom: 32px;
+}
+
+.slider__text {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.87;
+    letter-spacing: 0.04em;
+    text-align: center;
+
+    background: #84A178;
+    border-radius: 24px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 39px 109px;
+    color: #FCFCFC;
+    max-width: 968px;
+}
+
+.slider__geo {
+    text-align: center;
+    color: #131313;
+    margin: 32px 0 15px 0;
+}
+
+.slick-dots li button {
+    color: #D9D9D9;
+}
+
+.li.slick-active button:before {
+    color: #84A178;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .container__slider {
+        padding-top: 60px;
+    }
+
+    .slider__img {
+        padding-bottom: 28px;
+    }
+
+    .slider__text {
+        padding: 29px 80px;
+        max-width: 705px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding-top: 80px;
+        max-width: 100%;
+    }
+
+    .slider__img {
+        padding-bottom: 32px;
+    }
+
+    .slider__text {
+        padding: 39px 34px;
+        max-width: 280px;
+    }
+}
+
+.slick-dots li button:before {
+    font-family: slick;
+    font-size: 16px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    opacity: .25;
+    color: rgba(132, 161, 120, 1);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: 0.75;
+    color: rgba(132, 161, 120, 1)
+}
+
+element.style {
+    transition: opacity 500ms ease 0s;
+    width: 1168px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    z-index: 998;
+    opacity: 0;
+}
+
+.section__slider {
+    padding-bottom: 80px;
+}
+
+//   .slick-dots{
+//     font-size: 16px;
+//   }
+//   .slick-dots li{
+//     font-size: 16px;
+//   }
