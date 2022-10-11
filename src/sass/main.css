@@ -605,6 +605,8 @@ a {
   transition: border-color 400ms var(--timing-function);
 }
 .address__link:hover, .address__link:focus {
+  text-decoration: none;
+  color: var(--orange-products-bg-color);
   border-color: var(--orange-products-bg-color);
 }
 
