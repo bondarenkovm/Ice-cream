@@ -85,6 +85,7 @@ a {
   }
 }
 :root {
+  --white-color: #fff;
   --green-bg-color: #84a178;
   --green-products-bg-color: #9cbe8f;
   --yellow-products-bg-color: #efd478;
@@ -93,6 +94,9 @@ a {
   --black-content-color: #131313;
   --yellow-content-color: #f8d24e;
   --green-content-color: #0A8817;
+  --contacts-border-color: #e1e1e1;
+  --contacts-color-text-time: #ababab;
+  --contacts-bg-card-color: #ffffff;
   --footer-copyright-color: #7A7A7A;
   --footer-copyright-border: #E1E1E1;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -835,6 +839,29 @@ a {
 .footer-social-networks__list {
   display: flex;
   justify-content: space-between;
+}
+
+.footer-social-networks__icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  transition: width 400ms var(--timing-function), height 400ms var(--timing-function);
+}
+.footer-social-networks__icon:hover {
+  width: 32px;
+  height: 32px;
+}
+.footer-social-networks__icon:focus {
+  width: 35px;
+  height: 35px;
+}
+
+.footer-social-networks__icon--green {
+  fill: var(--green-bg-color);
+  transition: fill 400ms var(--timing-function);
+}
+.footer-social-networks__icon--green:hover, .footer-social-networks__icon--green:focus {
+  fill: var(--white-color);
 }
 
 .footer__text {
