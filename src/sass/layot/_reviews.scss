@@ -40,8 +40,24 @@
     color: #84A178;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
 
+    .section__slider {
+        padding-top: 80px;
+        padding-bottom: 48px;
+    }
+
+    .slider__img {
+        padding-bottom: 32px;
+    }
+
+    .slider__text {
+        padding: 39px 34px;
+        max-width: 280px;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
     .section__slider {
         padding-top: 80px;
         padding-bottom: 48px;

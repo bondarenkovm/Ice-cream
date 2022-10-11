@@ -1075,7 +1075,20 @@ a {
   color: #84A178;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
+  .section__slider {
+    padding-top: 80px;
+    padding-bottom: 48px;
+  }
+  .slider__img {
+    padding-bottom: 32px;
+  }
+  .slider__text {
+    padding: 39px 34px;
+    max-width: 280px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .section__slider {
     padding-top: 80px;
     padding-bottom: 48px;
@@ -1550,16 +1563,22 @@ element.style {
 @media screen and (max-width: 767px) {
   .header__container {
     padding-top: 12px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 }
 @media screen and (max-width: 1199px) {
   .header__container {
     padding-top: 20px;
+    padding-right: 32px;
+    padding-left: 32px;
   }
 }
 @media screen and (min-width: 1200px) {
   .header__container {
     padding-top: 8px;
+    padding-right: 16px;
+    padding-left: 16px;
   }
 }
 
@@ -1650,6 +1669,7 @@ element.style {
 }
 .header-menu__link:hover, .header-menu__link:focus {
   color: var(--black-content-color);
+  text-decoration: none;
 }
 @media screen and (max-width: 767px) {
   .header-menu__link {
@@ -3170,23 +3190,21 @@ element.style {
 
 @media screen and (max-width: 1199px) {
   .mobile-menu {
-    display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
-    right: 0;
     width: 100%;
     height: 100%;
-    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10000;
     transform: translateX(100%);
-    transition: transform 250ms var(--timing-function);
+    transition: transform 750ms var(--timing-function);
     background-color: var(--green-bg-color);
   }
   .mobile-menu.is-open {
     position: fixed;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transform: translateX(0);
+    transform: translateX(0%);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -3235,7 +3253,7 @@ element.style {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 500;
+  z-index: 5000;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: opacity 250ms var(--timing-function);
