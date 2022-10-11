@@ -1,11 +1,29 @@
 //  ======================= mom animation  =======================
+// прячу смайлы от 321 до 479px
+@media screen and (min-width: 321px) and (max-width: 479px) {
+  .hero-ice-mom {
+    display: none;
+  }
+  .hero-ice-son {
+    display: none;
+  }
+  .hero-ice-dad {
+    display: none;
+  }
+}
+
 .hero-ice-mom {
   position: absolute;
   z-index: 1250;
   animation-name: mom-animation;
-  @media screen and (min-width: 280px) and (max-width: 767px) {
+  @media screen and (min-width: 320px) and (max-width: 479px) {
     top: 320px;
     right: 78px;
+    animation-duration: 1000ms;
+  }
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    top: 320px;
+    right: 188px;
     animation-duration: 1000ms;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -19,7 +37,7 @@
     animation-duration: 4150ms;
   }
 }
-@media screen and (min-width: 280px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 479px) {
   @keyframes mom-animation {
     0% {
       top: 0px;
@@ -32,6 +50,22 @@
     100% {
       top: 320px;
       right: 78px;
+    }
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  @keyframes mom-animation {
+    0% {
+      top: 0px;
+      right: 188px;
+    }
+    90% {
+      top: 350px;
+      right: 188px;
+    }
+    100% {
+      top: 320px;
+      right: 188px;
     }
   }
 }
@@ -75,9 +109,14 @@
   position: absolute;
   z-index: 2300;
   animation-name: son-animation;
-  @media screen and (min-width: 280px) and (max-width: 767px) {
+  @media screen and (min-width: 320px) and (max-width: 479px) {
     top: 290px;
     right: 148px;
+    animation-duration: 1000ms;
+  }
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    top: 290px;
+    right: 258px;
     animation-duration: 950ms;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -91,7 +130,7 @@
     animation-duration: 4150ms;
   }
 }
-@media screen and (min-width: 280px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 479px) {
   @keyframes son-animation {
     0% {
       top: 0px;
@@ -104,6 +143,22 @@
     100% {
       top: 290px;
       right: 148px;
+    }
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  @keyframes son-animation {
+    0% {
+      top: 0px;
+      right: 258px;
+    }
+    90% {
+      top: 310px;
+      right: 258px;
+    }
+    100% {
+      top: 290px;
+      right: 258px;
     }
   }
 }
@@ -144,9 +199,14 @@
   position: absolute;
   z-index: 2400;
   animation-name: dad-animation;
-  @media screen and (min-width: 280px) and (max-width: 767px) {
+  @media screen and (min-width: 320px) and (max-width: 479px) {
     top: 250px;
     right: 88px;
+    animation-duration: 900ms;
+  }
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    top: 250px;
+    right: 198px;
     animation-duration: 900ms;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -160,7 +220,7 @@
     animation-duration: 3750ms;
   }
 }
-@media screen and (min-width: 280px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 479px) {
   @keyframes dad-animation {
     0% {
       top: 0px;
@@ -173,6 +233,22 @@
     100% {
       top: 250px;
       right: 88px;
+    }
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  @keyframes dad-animation {
+    0% {
+      top: 0px;
+      right: 198px;
+    }
+    90% {
+      top: 270px;
+      right: 198px;
+    }
+    100% {
+      top: 250px;
+      right: 198px;
     }
   }
 }
@@ -231,17 +307,19 @@
 
 .hero {
   background-color: var(--green-bg-color);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero__container {
   position: relative;
-  padding-top: 61px;
-  padding-left: 20px;
+  max-width: 480px;
+  width: 100%;
   height: 453px;
-  margin-left: auto;
-  margin-right: auto;
-  @media screen and (min-width: 320px) {
-    max-width: 320px;
+  padding-left: 20px;
+  padding-top: 61px;
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -273,7 +351,6 @@
   color: var(--white-content-color);
   margin-bottom: 32px;
   margin-top: 0;
-
   @media screen and (min-width: 768px) {
     width: 181px;
     font-size: 18px;
@@ -283,6 +360,7 @@
   @media screen and (min-width: 1200px) {
     width: 367px;
     font-size: 36px;
+    // font-size: 16px;
     padding: 0;
     margin: 0;
     position: absolute;
@@ -373,9 +451,15 @@
 .hero-ice-cream {
   position: absolute;
   display: block;
-  top: 245px;
-  left: 82px;
   z-index: 300;
+  @media screen and (min-width: 320px) and (max-width: 479px) {
+    top: 245px;
+    left: 28%;
+  }
+  @media screen and (min-width: 480px) {
+    top: 245px;
+    left: 136px;
+  }
   @media screen and (min-width: 768px) {
     top: 25px;
     left: 418px;
@@ -390,11 +474,19 @@
   height: 218px;
   position: absolute;
   display: block;
-  top: 245px;
-  left: 82px;
+  // top: 242px;
+  // left: 82px;
   z-index: 280;
   background: rgba(252, 252, 252, 0.44);
   filter: blur(26.8405px);
+  @media screen and (min-width: 320px) and (max-width: 479px) {
+    top: 242px;
+    left: 28%;
+  }
+  @media screen and (min-width: 480px) {
+    top: 242px;
+    left: 136px;
+  }
   @media screen and (min-width: 768px) {
     width: 266px;
     height: 341px;
@@ -405,10 +497,24 @@
   @media screen and (min-width: 1200px) {
     width: 477px;
     height: 590px;
-    top: 0px;
-    left: 658px;
+    top: 27px;
+    left: 651px;
     filter: blur(60px);
   }
+  // @media screen and (min-width: 768px) {
+  // width: 266px;
+  // height: 341px;
+  //   top: 25px;
+  //   left: 418px;
+  // filter: blur(27.9859px);
+  // }
+  // @media screen and (min-width: 1200px) {
+  //   width: 477px;
+  //   height: 590px;
+  //   top: 0px;
+  //   left: 658px;
+  //   filter: blur(60px);
+  // }
 }
 
 // ============= /hero-ice-cream =============
@@ -420,10 +526,15 @@
   left: 0;
   bottom: 0;
   z-index: 0;
+  @media screen and (max-width: 767px) {
+    max-width: 480px;
+    width: 100%;
+  }
 }
 // ============= /hero-dots =============
 // ============= hero-plate =============
 .hero-plate {
+  display: none;
   @media screen and (min-width: 768px) {
     display: block;
     position: absolute;
@@ -440,6 +551,7 @@
 
 // ============= shop-list =============
 .hero-shop-list {
+  display: none;
   @media screen and (min-width: 768px) {
     display: block;
     position: absolute;
@@ -505,19 +617,19 @@
     left: 256px;
   }
 
-  //   &::after {
-  //     @media screen and (min-width: 768px) {
-  //       position: absolute;
-  //       content: '';
-  //       display: block;
-  //       width: 45px;
-  //       height: 20px;
-  //       background-image: url(../images/hero-arrow.png);
-  //       background-repeat: no-repeat;
-  //       bottom: -30px;
-  //     }
-  //     @media screen and (min-width: 1200px) {
-  //       bottom: -45px;
-  //     }
-  //   }
+  &::after {
+    @media screen and (min-width: 768px) {
+      position: absolute;
+      content: '';
+      display: block;
+      width: 45px;
+      height: 20px;
+      background-image: url(../images/hero-arrow.png);
+      background-repeat: no-repeat;
+      bottom: -30px;
+    }
+    @media screen and (min-width: 1200px) {
+      bottom: -45px;
+    }
+  }
 }

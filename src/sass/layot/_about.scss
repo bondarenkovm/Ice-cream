@@ -22,15 +22,17 @@
         padding-left: 20px;
         padding-right: 20px;
     }
+
     @media screen and (min-width: 768px) {
         width: 768px;
-        padding-left: 32px;
-        padding-right: 32px;
+        padding-left: 2px;
+        padding-right: 2px;
     }
+
     @media screen and (min-width: 1200px) {
         width: 1200px;
-        padding-left: 16px;
-        padding-right: 16px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 
@@ -85,13 +87,14 @@
     @media screen and (min-width: 768px) {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
         flex-basis: calc((100% - 32px) / 2);
         gap: 32px;
     }
 
     @media screen and (min-width: 1200px) {
         justify-content: flex-start;
+
         // flex-basis: calc((100% - 32px) / 2);
         gap: 100px;
     }
@@ -104,7 +107,7 @@
     margin-right: auto;
     width: 278px;
     height: 278px;
-    background-color: var(--yellow-content-color);
+    background-color: var(--about-yellow-color);
     border-radius: 50%;
 
     margin-bottom: 62px;
@@ -127,9 +130,14 @@
     position: absolute;
     top: 22;
 
+    @media screen and (min-width: 768px) {
+        width: 334px;
+        height: 330px;
+    }
+
     @media screen and (min-width: 1200px) {
         top: 32;
-        left: 5;
+        left: 7;
         width: 490px;
         height: 490px;
     }
@@ -147,9 +155,11 @@
     color: var(--white-content-color);
 
     @media screen and (min-width: 768px) {
+        text-align: left;
         margin-left: 0;
         margin-right: 0;
         width: 334px;
+        margin-bottom: 8px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -176,6 +186,7 @@
         margin-right: 0;
         width: 334px;
         margin-bottom: 8px;
+        text-align: left;
     }
 
     @media screen and (min-width: 1200px) {
@@ -202,6 +213,7 @@
         margin-left: 0;
         margin-right: 0;
         width: 334px;
+        text-align: left;
     }
 
     @media screen and (min-width: 1200px) {
@@ -226,8 +238,7 @@
     border: none;
     cursor: pointer;
 
-    font-weight: 600;
-    @include font(14px, 700, 18px);
+    @include font(14px, 600, 18px);
     color: #131313;
     outline: none;
 
@@ -239,6 +250,12 @@
     &:focus {
         color: #fcfcfc;
         fill: #fcfcfc;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-left: 0;
+
+        @include font(14px, 600, 18px);
     }
 
     @media screen and (min-width: 1200px) {

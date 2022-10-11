@@ -1,3 +1,18 @@
+@keyframes cf3FadeInOut {
+    0% {
+        opacity: 1;
+    }
+    45% {
+        opacity: 1;
+    }
+    55% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 .gallery__container {
     width: 100%;
 
@@ -16,8 +31,8 @@
     }
     @media screen and (min-width: 1200px) {
         width: 1200px;
-        padding-left: 16px;
-        padding-right: 16px;
+        padding-left: 93px;
+        padding-right: 93px;
     }
 }
 
@@ -27,7 +42,7 @@
 
 .gallery__picture {
     position: absolute;
-    width: 279px;
+    width: calc(100% - 32px);
     height: auto;
 
     left: 50%;
@@ -37,50 +52,86 @@
     border-radius: 7.4px;
     box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
 
+    @media screen and (min-width: 480px) {
+        width: 279px;
+    }
+
     @media screen and (min-width: 768px) {
         position: static;
         left: 0;
         top: 0;
         transform: translateX(0);
 
+        margin-left: auto;
+        margin-right: auto;
+
         width: 704px;
         border-radius: 18px;
     }
 
     @media screen and (min-width: 1200px) {
+        position: relative;
+        overflow: hidden;
         width: 1013px;
+        height: 422px;
         margin-left: auto;
         margin-right: auto;
         width: 100%;
         border-radius: 28px;
-        // display: flex;
-        // // flex-direction: row;
-        // gap: 25px;
+        text-align: center;
     }
 }
 
-// .gallery__desktop--expanding {
+.gallery__desktop--picture {
+    @media screen and (min-width: 1200px) {
+        position: absolute;
+
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+
+        animation-name: cf3FadeInOut;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-duration: 5s;
+        animation-direction: reverse;
+    }
+}
+
+.gallery__desktop--animation-hidden {
+    display: none;
+    @media screen and (min-width: 1200px) {
+        display: inline-block;
+        left: 50%;
+        transform: translateX(-50%, 0);
+    }
+}
+
+// .gallery_image {
+//     display: none;
+
 //     @media screen and (min-width: 1200px) {
-//         border-radius: 24px;
-//         width: calc((100% - 50px) / 3);
+//         position: absolute;
+
+//         display: block;
+
+//         width: 100%;
 //         height: 422px;
 //         object-fit: cover;
-
-//         transition: width 0.5s ease-in-out;
-
-//         &:hover {
-//             width: 1013px;
-//         }
+//         margin-left: auto;
+//         margin-right: auto;
 //     }
 // }
 
-.gallery_image {
-    display: none;
-
-    // @media screen and (min-width: 1200px) {
-    //     display: block;
-    // }
-}
+// .gallery__desktop--animation {
+//     width: 100%;
+//     @media screen and (min-width: 1200px) {
+//         transform: translateX(0);
+//         top: 0;
+//         left: 0;
+//     }
+// }
 
 // .section 4 background image {
 //     background-position: center;

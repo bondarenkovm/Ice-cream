@@ -10,17 +10,22 @@
   pointer-events: auto;
 }
 
+label.modal-product-form__label {
+  width: 100%;
+}
+
 .modal-products {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  padding: 20px;
+  padding: 28px 20px 32px 20px;
   background: #fcfcfc;
   border: 2px solid #f8d24e;
   border-radius: 10px;
 }
+
 .modal-close-btn {
   position: absolute;
   top: 20px;
@@ -37,11 +42,61 @@
   cursor: pointer;
   transition-duration: var(--timing-function), fill var(--timing-function);
 }
+
+@media screen and (min-width: 480px) {
+  .modal-products {
+    padding: 28px 5px;
+  }
+
+  .modal-products-form__labels {
+    max-width: 368px;
+  }
+
+  .modal-products {
+    width: 450px;
+  }
+
+  .ingridient__item {
+    min-width: 368px;
+  }
+
+  .modal-products__circle--green {
+    background-image: url('../images/products-modal-ice-cream-desktop.png');
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .modal-products {
+    width: 90%;
+  }
+
+  .modal-products-form__labels {
+    max-width: 480px;
+  }
+
+  .ingridient__item {
+    min-width: 240px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal-products {
+    width: 568px;
+  }
+
+  .ingridient__item {
+    min-width: 488px;
+  }
+}
+
 .modal-products-form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .modal-products-form__title {
   margin-bottom: 22px;
   font-family: 'Seymour One';
@@ -53,16 +108,15 @@
   text-align: center;
   color: var(--black-content-color);
 }
-.modal-products-form__item {
+
+.modal-products-form-circle__item {
   position: relative;
   width: 130px;
   height: 130.6px;
   border-radius: 50%;
-  background: linear-gradient(
-      0deg,
+  background: linear-gradient(0deg,
       rgba(156, 190, 143, 0.7),
-      rgba(156, 190, 143, 0.7)
-    ),
+      rgba(156, 190, 143, 0.7)),
     #d9d9d9;
   box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
 }
@@ -71,7 +125,7 @@
   position: absolute;
   width: 130px;
   height: 130.6px;
-  left: -1%;
+  left: 0;
   top: -10%;
   z-index: 2;
   border-radius: 50%;
@@ -95,6 +149,7 @@
   color: #131313;
   margin-bottom: 39px;
 }
+
 .modal-products-form__item {
   position: relative;
   width: 53px;
@@ -115,6 +170,12 @@
   border: 2px solid 9CBE8F;
   box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
 }
+
+.ingridient__item {
+  display: flex;
+  justify-content: space-between;
+}
+
 .modal-products-form__value {
   display: flex;
   justify-content: center;
@@ -141,6 +202,7 @@
   text-align: center;
   color: #131313;
 }
+
 .modal-products-form__subtitle {
   font-family: 'Montserrat';
   font-style: normal;
@@ -150,6 +212,7 @@
   color: #131313;
   margin-bottom: 24px;
 }
+
 .ingridient__list {
   font-family: 'Montserrat';
   font-style: normal;
@@ -159,7 +222,6 @@
   letter-spacing: 0.04em;
   color: #131313;
   margin-bottom: 48px;
-  display: block;
 }
 
 .modal-products-form__textarea {
@@ -171,15 +233,14 @@
   border: 1px solid #84a178;
   border-radius: 10px;
   resize: none;
+  outline: none;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   color: #131313;
 }
-.modal-products-form__labels {
-  margin-bottom: 40px;
-}
+
 .modal-products__input {
   padding: 11px 16px;
   margin-bottom: 16px;
@@ -192,9 +253,5 @@
   font-weight: 400;
   font-size: 14px;
   color: #131313;
-}
-@media screen and (min-width: 768px) {
-  .modal-hero {
-    max-width: 568px;
-  }
+  outline: none;
 }
