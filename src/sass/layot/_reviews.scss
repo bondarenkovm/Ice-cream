@@ -10,34 +10,64 @@
 }
 
 .slider__text {
-    font-family: Montserrat;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.87;
-    letter-spacing: 0.04em;
     text-align: center;
 
-    background: #84A178;
+    background: var(--green-bg-color);
     border-radius: 24px;
     text-align: center;
     margin: 0 auto;
     padding: 39px 109px;
-    color: #FCFCFC;
+    color: var(--white-content-color);
     max-width: 968px;
 }
 
 .slider__geo {
     text-align: center;
-    color: #131313;
+    color: var(-black-content-color);
     margin: 32px 0 15px 0;
 }
 
 .slick-dots li button {
-    color: #D9D9D9;
+    color: var(--white-product-modal-color);
 }
 
 .li.slick-active button:before {
-    color: #84A178;
+    color: var(--green-bg-color);
+}
+
+.slick-dots li button:before {
+    font-family: slick;
+    font-size: 12px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    opacity: .25;
+    color: var(--green-reviews-color);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: 0.75;
+    color: var(--green-reviews-color);
+}
+
+element.style {
+    transition: opacity 1000ms ease 0s;
+    width: 1168px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    z-index: 998;
+    opacity: 0;
 }
 
 @media screen and (max-width: 479px) {
@@ -58,6 +88,7 @@
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
+
     .section__slider {
         padding-top: 80px;
         padding-bottom: 48px;
@@ -91,40 +122,9 @@
 }
 
 @media screen and (min-width: 1200px) {
+
     .section__slider {
         padding-top: 128px;
         padding-bottom: 100px;
     }
-}
-
-.slick-dots li button:before {
-    font-family: slick;
-    font-size: 12px;
-    line-height: 20px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 20px;
-    height: 20px;
-    content: '•';
-    text-align: center;
-    opacity: .25;
-    color: rgba(132, 161, 120, 1);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-.slick-dots li.slick-active button:before {
-    opacity: 0.75;
-    color: rgba(132, 161, 120, 1)
-}
-
-element.style {
-    transition: opacity 1000ms ease 0s;
-    width: 1168px;
-    position: relative;
-    left: 0px;
-    top: 0px;
-    z-index: 998;
-    opacity: 0;
 }
