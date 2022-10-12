@@ -35,37 +35,7 @@
 }
 
 .location-modal__button {
-    margin-top: 40px;
-    padding: 34px 12px;
-    font-family: Montserrat;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 18px;
-
-    padding: 12px 34px;
-    margin-left: auto;
-    margin-right: auto;
-    color: var(--black-color);
-
-    border: transparent;
-    background-color: var(--yellow-content-color);
-    border-radius: 10px;
-    outline: none;
-    transition: background-color 1000ms ease-in-out, transform 1000ms ease-in-out;
-
-    &:hover {
-        color: var(--black-color);
-        background-color: var(--green-content-color);
-        transform: scale(1.2);
-
-    }
-
-    &:focus {
-        color: var(--white-content-color);
-        background-color: var(--green-content-color);
-        transform: scale(1.2);
-
-    }
+    margin-top: 32px;
 }
 
 .location-modal__link {
@@ -74,10 +44,12 @@
 
     &:hover {
         color: var(--black-color);
+        text-decoration: none;
     }
 
     &:focus {
         color: var(--white-content-color);
+        text-decoration: none;
     }
 }
 

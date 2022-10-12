@@ -93,32 +93,6 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 164px;
-    height: 42px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--yellow-content-color);
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    @include font(14px, 600, 18px);
-    outline: none;
-
-    &:hover,
-    &:focus {
-        background-color: var(--green-content-color);
-    }
-
-    &:focus {
-        color: var(--white-content-color);
-        fill: var(--white-content-color);
-    }
-}
-
-.about__icon {
-    stroke: var(--black-content-color);
-    margin-left: 5px;
 }
 
 @media screen and (min-width: 320px) {
@@ -201,8 +175,6 @@
 
     .about__button {
         margin-left: 0;
-
-        @include font(14px, 600, 18px);
     }
 
 }

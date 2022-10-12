@@ -1,4 +1,4 @@
-<div hero-modal class="backdrop is-hidden">
+<div hero-modal class="backdrop">
   <div class="modal-hero modal-container">
     <button type="button" hero-modal-close class="modal-close-btn">
       <svg width="20" height="20">
@@ -29,20 +29,20 @@
       <div class="modal-hero-form__label--bloc">
         <label class="modal-hero-form__label">
           <span class="modal-hero-form__wrapper">
-            <input type="text" class="modal-form__input modal-hero-form__input" name="user_name" pattern="[a-zA-Zа-яА-яІіЇї]+"
+            <input type="text" class="modal-form__input" name="user_name" pattern="[a-zA-Zа-яА-яІіЇї]+"
               placeholder="Name" minlength="3" required />
           </span>
         </label>
         <label class="modal-hero-form__label">
           <span class="modal-hero-form__wrapper">
-            <input class="modal-form__input modal-hero-form__input" type="tel" name="tel" pattern="[0-9]{10}" placeholder="Phone" />
+            <input class="modal-form__input " type="tel" name="tel" pattern="[0-9]{10}" placeholder="Phone" />
           </span>
         </label>
         <label class="modal-hero-form__label">
-          <textarea class="modal-form__input modal-hero-form__textarea" name="comment" placeholder="Comment"></textarea>
+          <textarea class="modal-form__input" name="comment" placeholder="Comment"></textarea>
         </label>
       </div>
-      <button type="submit" class="modal-hero-form__button">Submit</button>
+      <button type="submit" class="button-yellow modal-hero-form__button">Submit</button>
     </form>
   </div>
 </div>

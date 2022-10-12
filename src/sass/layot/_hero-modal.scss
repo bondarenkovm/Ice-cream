@@ -4,6 +4,11 @@
   padding: 32px 40px;
 }
 
+.modal-hero-form {
+  display: flex;
+  flex-direction: column;
+}
+
 .modal-hero-list {
   display: flex;
   justify-content: space-between;
@@ -90,7 +95,6 @@ label.modal-hero-form__label {
   border-radius: 50%;
   background-size: cover;
   background-position: center;
-
 }
 
 .modal-hero-form__img--green {
@@ -141,6 +145,11 @@ label.modal-hero-form__label {
 
 .modal-hero-item {
   margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal-hero-form__button {
   margin-left: auto;
   margin-right: auto;
 }

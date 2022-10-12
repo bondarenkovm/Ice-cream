@@ -473,12 +473,17 @@
 
 }
 
+.anchor-list__item--yellow {
+  display: flex;
+  align-items: center;
+}
+
 .anchor-list__link {
 
   text-align: center;
   font-family: inherit;
   font-weight: 600;
-  font-size: 8px;
+  // font-size: 8px;
   line-height: 1.25;
   text-decoration: none;
 
@@ -488,28 +493,15 @@
 }
 
 .anchor-list__link_products {
-  padding-top: 7px;
-  padding-bottom: 7px;
-  padding-right: 13px;
-  padding-left: 11px;
-  color: var(--black-color);
-  border: 2px solid var(--yellow-content-color);
-  border-radius: 8px;
-  cursor: pointer;
-
-  @media screen and (min-width: 1200px) {
-    padding: 12px 34px;
-  }
+  color: var(--black-content-color);
 
   &:hover {
-    border-color: var(--green-content-color);
+    color: var(--black-content-color);
   }
 
   &:focus {
     color: var(--white-content-color);
-    border-color: var(--green-content-color);
   }
-
 }
 
 .anchor-list__link_about {
