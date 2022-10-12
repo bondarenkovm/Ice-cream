@@ -1,4 +1,5 @@
 @keyframes cf3FadeInOut {
+
     0% {
         opacity: 1;
     }
@@ -11,29 +12,11 @@
     100% {
         opacity: 0;
     }
+
 }
 
 .gallery__container {
     width: 100%;
-
-    @media screen and (min-width: 320px) {
-        min-height: 111px;
-        width: 320px;
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    @media screen and (min-width: 768px) {
-        width: 768px;
-        padding-left: 32px;
-        padding-right: 32px;
-    }
-    @media screen and (min-width: 1200px) {
-        width: 1200px;
-        padding-left: 93px;
-        padding-right: 93px;
-    }
 }
 
 .gallery__container {
@@ -52,11 +35,48 @@
     border-radius: 7.4px;
     box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
 
-    @media screen and (min-width: 480px) {
+}
+
+.gallery__desktop--picture {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+
+    animation-name: cf3FadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-direction: reverse;
+}
+
+.gallery__desktop--animation-hidden {
+    display: none;
+}
+
+@media screen and (min-width: 320px) {
+
+    .gallery__container {
+        min-height: 111px;
+        width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    
+    .gallery__picture {
         width: 279px;
     }
+}
 
-    @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+    .gallery__picture {
         position: static;
         left: 0;
         top: 0;
@@ -69,7 +89,17 @@
         border-radius: 18px;
     }
 
-    @media screen and (min-width: 1200px) {
+    .gallery__container {
+        width: 768px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    
+    .gallery__picture {
         position: relative;
         overflow: hidden;
         width: 1013px;
@@ -80,10 +110,14 @@
         border-radius: 28px;
         text-align: center;
     }
-}
 
-.gallery__desktop--picture {
-    @media screen and (min-width: 1200px) {
+    .gallery__container {
+        width: 1200px;
+        padding-left: 93px;
+        padding-right: 93px;
+    }
+
+    .gallery__desktop--picture {
         position: absolute;
 
         top: 0;
@@ -97,16 +131,15 @@
         animation-duration: 5s;
         animation-direction: reverse;
     }
-}
 
-.gallery__desktop--animation-hidden {
-    display: none;
-    @media screen and (min-width: 1200px) {
+    .gallery__desktop--animation-hidden {
         display: inline-block;
         left: 50%;
         transform: translateX(-50%, 0);
     }
+
 }
+
 
 // .gallery_image {
 //     display: none;
