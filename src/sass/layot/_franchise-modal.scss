@@ -1,3 +1,14 @@
+.franchise-modal__container {
+    transform: translate(-50%, -50%) rotateY(0deg);
+    transition: var(--transition-modal-window);
+}
+
+.backdrop.is-hidden {
+    .franchise-modal__container {
+        transform: translate(-50%, -50%) rotateY(360deg);
+    }
+}
+
 .title {
     font-family: Seymour One;
     font-size: 20px;

@@ -1,6 +1,19 @@
 .modal-products {
   padding: 28px 20px 32px 20px;
   color: var(--black-content-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+  transform: translate(-50%, -50%) translateX(0%);
+  transition: var(--transition-modal-window);
+}
+
+.backdrop.is-hidden {
+
+  .modal-products {
+    transform: translate(-50%, -50%) translateX(-50%);
+  }
 }
 
 .button-btn {

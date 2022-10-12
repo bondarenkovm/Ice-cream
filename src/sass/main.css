@@ -2536,6 +2536,12 @@ element.style {
 .modal-hero {
   width: 100%;
   padding: 32px 40px;
+  transform: translate(-50%, -50%) scale(1);
+  transition: var(--transition-modal-window);
+}
+
+.backdrop.is-hidden .modal-hero {
+  transform: translate(-50%, -50%) scale(0.5);
 }
 
 .modal-hero-form {
@@ -2703,6 +2709,16 @@ label.modal-hero-form__label {
 .modal-products {
   padding: 28px 20px 32px 20px;
   color: var(--black-content-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+  transform: translate(-50%, -50%) translateX(0%);
+  transition: var(--transition-modal-window);
+}
+
+.backdrop.is-hidden .modal-products {
+  transform: translate(-50%, -50%) translateX(-50%);
 }
 
 .button-btn {
@@ -2949,6 +2965,15 @@ label.modal-product-form__label {
     width: 528px;
   }
 }
+.franchise-modal__container {
+  transform: translate(-50%, -50%) rotateY(0deg);
+  transition: var(--transition-modal-window);
+}
+
+.backdrop.is-hidden .franchise-modal__container {
+  transform: translate(-50%, -50%) rotateY(360deg);
+}
+
 .title {
   font-family: Seymour One;
   font-size: 20px;

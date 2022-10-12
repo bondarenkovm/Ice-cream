@@ -1,8 +1,15 @@
-
-
 .modal-hero {
   width: 100%;
   padding: 32px 40px;
+  transform: translate(-50%, -50%) scale(1);
+  transition: var(--transition-modal-window);
+}
+
+.backdrop.is-hidden {
+
+  .modal-hero {
+    transform: translate(-50%, -50%) scale(0.5);
+  }
 }
 
 .modal-hero-form {
