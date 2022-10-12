@@ -139,40 +139,13 @@ label.modal-hero-form__label {
   box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
 }
 
-
-.modal-hero-form__textarea {
-  height: 84px;
-  padding: 11px 16px;
-  margin-bottom: 32px;
-  width: 100%;
-  background-color: var(--modal-form-input-color);
-  border: 1px solid var(--green-bg-color);
-  border-radius: 10px;
-  font-weight: 400;
-  font-size: 14px;
-  color: var(--black-content-color);
-  resize: none;
-  outline: none;
-}
-
 .modal-hero-item {
   margin-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.modal-hero-form__input {
-  padding: 11px 16px;
-  margin-bottom: 16px;
-  width: 100%;
-  background-color: var(--modal-form-input-color);
-  border: 1px solid var(--green-bg-color);
-  border-radius: 10px;
-  font-weight: 400;
-  font-size: 14px;
-  color: var(--black-content-color);
-  outline: none;
-}
+
 
 @media screen and (max-width: 479px) {
 
