@@ -1,31 +1,12 @@
 .header {
-    @include width-height($w: 100vw);
+    @include width-height($w: 100vw, 75px);
     background-color: var(--green-bg-color);
 }
 
 .header__container {
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    @media screen and (max-width: 767px) {
-        padding-top: 12px;
-        padding-right: 20px;
-        padding-left: 20px;
-    }
-
-    @media screen and (max-width: 1199px) {
-        padding-top: 20px;
-        padding-right: 32px;
-        padding-left: 32px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        padding-top: 8px;
-        padding-right: 16px;
-        padding-left: 16px;
-    }
 }
 
 .header-buttons__container {
@@ -33,17 +14,6 @@
     align-items: center;
 }
 
-.header-menu--hidden {
-    @media screen and (max-width: 1199px) {
-        display: none;
-    }
-}
-
-.header__button--hidden {
-    @media screen and (max-width: 767px) {
-        display: none;
-    }
-}
 
 .mobile-menu__button {
     margin: 0;
@@ -51,16 +21,6 @@
     bottom: 0;
     background-color: transparent;
     border-color: transparent;
-
-    &--open {
-        @media screen and (min-width: 768px) and (max-width: 1199px) {
-            margin-right: 32px;
-        }
-
-        @media screen and (min-width: 1200px) {
-            display: none;
-        }
-    }
 }
 
 .mobile-menu__icon--burger {
@@ -82,41 +42,7 @@
 
 }
 
-.header-menu {
-    @media screen and (max-width:1199px) {
-        margin-bottom: auto;
-        text-align: center;
-    }
-}
 
-.header-menu__list {
-
-    @media screen and (min-width:1200px) {
-        display: flex;
-    }
-}
-
-.header-menu__item {
-
-    @media screen and (max-width:767px) {
-        &:not(:last-child) {
-            margin-bottom: 32px;
-        }
-    }
-
-    @media screen and (max-width:1199px) {
-        &:not(:last-child) {
-            margin-bottom: 40px;
-        }
-    }
-
-    @media screen and (min-width:1200px) {
-        &:not(:last-child) {
-            margin-right: 27px;
-        }
-    }
-
-}
 
 .header-menu__link {
     text-decoration: none;
@@ -128,18 +54,109 @@
         color: var(--black-content-color);
         text-decoration: none;
     }
+}
 
+.header__button--header {
 
-    @media screen and (max-width:767px) {
-        @include font($fs:32px, $fw:700, $lh: 1.21);
+    &:focus .header__icon {
+        stroke: var(--white-content-color);
+    }
+}
+
+ @media screen and (max-width: 767px) {
+
+    .header__container {
+        padding-top: 12px;
+        padding-right: 20px;
+        padding-left: 20px;
     }
 
-    @media screen and (min-width:768px)and(max-width:1199px) {
-        @include font($fs:48px, $fw:700, $lh: 1.23);
+    .header__button--hidden {
+        display: none;
+    }
+    
+    .header-menu__item {
+        margin-bottom: 32px;
     }
 
-    @media screen and (min-width:1200px) {
-        @include font($fw:700, $lh: 1.25);
+    .header-menu__link {
+        @include font($fs: 32px, $fw: 700, $lh: 1.21);
+    }
+
+    .header__button--header {
+        display: none;
+    }
+
+ }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+
+    .mobile-menu__button {
+        &--open {
+            margin-right: 32px;
+        }
+    }
+
+    .header-menu__link {
+        @include font($fs: 48px, $fw: 700, $lh: 1.23);
+    }
+
+  }
+
+ @media screen and (max-width: 1199px) {
+
+    .header__container {
+        padding-top: 20px;
+        padding-right: 32px;
+        padding-left: 32px;
+    }
+
+    .header-menu--hidden {
+        display: none;
+    }
+
+    .header-menu {
+        margin-bottom: auto;
+        text-align: center;
+    }
+
+    .header-menu__item {
+
+        &:not(:last-child) {
+            margin-bottom: 40px;
+        }
+    }
+
+ }
+
+ @media screen and (min-width: 1200px) {
+
+    .header__container {
+        padding-top: 8px;
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+
+    .mobile-menu__button {
+
+        &--open {
+            display: none;
+        }
+    }
+
+    .header-menu__list {
+        display: flex;
+    }
+
+    .header-menu__item {
+
+        &:not(:last-child) {
+            margin-right: 27px;
+        }
+    }
+
+    .header-menu__link {
+        @include font($fw: 700, $lh: 1.25);
 
         &:hover {
             color: var(--yellow-content-color);
@@ -149,14 +166,9 @@
             color: var(--green-content-color);
         }
     }
-}
+    
+ }
 
-.header__button--header {
-    @media screen and (max-width:767px) {
-        display: none;
-    }
 
-    &:focus .header__icon {
-        stroke: var(--white-content-color);
-    }
-}
+
+
