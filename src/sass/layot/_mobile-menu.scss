@@ -1,52 +1,8 @@
 .mobile-menu__container {
-
     display: flex;
     align-items: center;
     justify-content: space-between;
     @include width-height($w: 100vw);
-
-    @media screen and (max-width: 767px) {
-        padding-top: 12px;
-        margin-bottom: 50px;
-        padding-right: 20px;
-        padding-left: 20px;
-    }
-
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-        padding-top: 12px;
-        margin-bottom: 76px;
-        padding-right: 32px;
-        padding-left: 32px;
-    }
-}
-
-.mobile-menu {
-    
-    @media screen and (max-width: 1199px) {
-        
-        position: fixed;
-        top: 0;
-        @include width-height($w: 100%, $h:100%);
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        z-index: 10000;
-
-        transform: translateX(100%);
-        transition: transform 750ms var(--timing-function);
-
-        background-color: var(--green-bg-color);
-
-        &.is-open {
-            position: fixed;
-            transform: translateX(0%);
-        }
-    }
-
-    @media screen and(min-width:1200px) {
-        display: none;
-    }
 }
 
 .mobile-menu__icon--close {
@@ -59,13 +15,69 @@
     }
 }
 
-.header__button--mobile-menu {
+ @media screen and (max-width: 767px) {
 
-    @media screen and (max-width:767px) {
+    .mobile-menu__container {
+        padding-top: 12px;
+        margin-bottom: 50px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .header__button--mobile-menu {
         margin-bottom: 63px;
     }
 
-    @media screen and (min-width:768px) {
-        display: none;
+ }
+
+ @media screen and (min-width: 768px) and (max-width: 1199px) {
+    
+    .mobile-menu__container {
+        padding-top: 12px;
+        margin-bottom: 76px;
+        padding-right: 32px;
+        padding-left: 32px;
     }
-}
+ }
+
+  @media screen and (min-width:768px) {
+
+    .header__button--mobile-menu {
+        display: none
+    }
+  }
+
+  @media screen and (max-width: 1199px) {
+
+    .mobile-menu {
+        position: fixed;
+        top: 0;
+        @include width-height($w: 100%, $h: 100%);
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 10000;
+    
+        transform: translateX(100%);
+        transition: transform 750ms var(--timing-function);
+    
+        background-color: var(--green-bg-color);
+    
+        &.is-open {
+            position: fixed;
+            transform: translateX(0%);
+        }
+    }
+
+  }
+  
+   @media screen and(min-width:1200px) {
+
+        .mobile-menu {
+            display: none;
+        }
+   }
+
+
+  
