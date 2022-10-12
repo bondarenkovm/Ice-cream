@@ -1,19 +1,8 @@
 .backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 100;
-    background-color: rgba(0, 0, 0, 0.2);
-    opacity: 1;
     transition: opacity 1000ms ease, visibility 1000ms ease;
 }
 
 .backdrop.is-hidden {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
 
     .location-modal__container {
         transform: translate(-50%, -50%) rotateY(360deg);
@@ -21,35 +10,23 @@
 }
 
 .location-modal__container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    opacity: 1;
     transform: translate(-50%, -50%) rotateY(0deg);
-    background-color: #FCFCFC;
-    border: 2px solid #F8D24E;
-    border-radius: 10px;
     transition: transform 1500ms ease;
 }
 
 .location-modal__title {
-    display: block;
     font-family: Seymour One;
     font-size: 20px;
     font-weight: 400;
     line-height: 28px;
     text-align: center;
-    color: #131313;
-    max-width: 322px;
     margin-bottom: 32px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .location-modal__iframe {
     display: flex;
     justify-content: center;
-    margin-bottom: 32px;
+    flex-wrap: wrap;
 
 }
 
@@ -58,12 +35,8 @@
 }
 
 .location-modal__button {
-    display: block;
-    text-decoration: none;
-    width: 145px;
-    height: 42px;
-
-
+    margin-top: 40px;
+    padding: 34px 12px;
     font-family: Montserrat;
     font-size: 14px;
     font-weight: 600;
@@ -72,30 +45,44 @@
     padding: 12px 34px;
     margin-left: auto;
     margin-right: auto;
-    color: #000000;
+    color: var(--black-color);
 
     border: transparent;
-    background-color: #F8D24E;
+    background-color: var(--yellow-content-color);
     border-radius: 10px;
     outline: none;
     transition: background-color 1000ms ease-in-out, transform 1000ms ease-in-out;
 
     &:hover {
-        color: #000000;
-        background-color: #0A8817;
+        color: var(--black-color);
+        background-color: var(--green-content-color);
         transform: scale(1.2);
 
     }
 
     &:focus {
-        color: #FCFCFC;
-        background-color: #0A8817;
+        color: var(--white-content-color);
+        background-color: var(--green-content-color);
         transform: scale(1.2);
 
     }
 }
 
+.location-modal__link {
+    text-decoration: none;
+    color: var(--black-color);
+
+    &:hover {
+        color: var(--black-color);
+    }
+
+    &:focus {
+        color: var(--white-content-color);
+    }
+}
+
 @media screen and (max-width: 479px) {
+
     .location-modal__container {
         width: 90%;
         padding: 28px;
@@ -105,9 +92,11 @@
         width: 100%;
         height: 199px;
     }
+
 }
 
 @media screen and (min-width: 480px) {
+
     .location-modal__container {
         width: 450px;
         padding: 32px 60px;
@@ -117,9 +106,11 @@
         width: 448px;
         height: 260px;
     }
+
 }
 
 @media screen and (min-width: 768px) {
+
     .location-modal__container {
         width: 528px;
     }
