@@ -13,16 +13,27 @@
   border: none;
   margin: auto auto -11px auto;
   display: block;
-
+  transform: scale(1);
+  transition: transform 500ms ease-in-out;
+  
   &:hover {
-    transform: scale(1.12);
+    transform: scaleX(1.2);
   }
 
   &:focus {
-    transform: scale(1.15);
+    transform: scaleY(1.4) scaleX(1.2);
   }
-
 }
+
+// .products__icon {
+//   stroke-width: 1;
+//   transition: stroke-width var(--transition-dur-and-func-btns);
+
+//   &:focus {
+//     stroke-width: 5;
+//   }
+
+// }
 
 .products__section {
   border: none;

@@ -1166,12 +1166,14 @@ element.style {
   border: none;
   margin: auto auto -11px auto;
   display: block;
+  transform: scale(1);
+  transition: transform 500ms ease-in-out;
 }
 .products__btn:hover {
-  transform: scale(1.12);
+  transform: scaleX(1.2);
 }
 .products__btn:focus {
-  transform: scale(1.15);
+  transform: scaleY(1.4) scaleX(1.2);
 }
 
 .products__section {
