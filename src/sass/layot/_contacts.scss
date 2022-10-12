@@ -1,8 +1,3 @@
-:root {
-  --contacts-border-color: #e1e1e1;
-  --contacts-color-text-time: #ababab;
-  --contacts-bg-card-color: #ffffff;
-}
 .contacts {
   padding-bottom: 40px;
 }
@@ -34,7 +29,6 @@
   padding-right: 24px;
   font-weight: 500;
   @include font-contacts(12px, 22px);
-  letter-spacing: 0.04em;
   color: var(--black-content-color);
   margin-bottom: 20px;
 }
@@ -44,20 +38,16 @@
 }
 
 .address__text {
-  font-style: normal;
   font-weight: 500;
   @include font-contacts(12px, 22px);
-  letter-spacing: 0.04em;
   color: var(--black-content-color);
   margin-bottom: 8px;
 }
 
 .address__link {
   position: relative;
-  font-style: normal;
   font-weight: 500;
   @include font-contacts(12px, 22px);
-  letter-spacing: 0.04em;
   color: var(--orange-products-bg-color);
   text-decoration: none;
   border-bottom: 1px solid transparent;
@@ -139,7 +129,7 @@
 
   &:hover,
   &:focus {
-    background-color: #0a8817;
+    background-color: var(--green-content-color);
   }
 
   &:focus {
@@ -166,7 +156,7 @@
     color 400ms var(--timing-function);
   &:hover,
   &:focus {
-    border: 2px solid #0a8817;
+    border: 2px solid var(--green-content-color);
   }
 
   &:focus {
@@ -210,9 +200,11 @@
     margin-left: auto;
     margin-right: auto;
   }
+
 }
 
 @media screen and (min-width: 768px) {
+
   .contacts__list {
     display: flex;
     gap: 16px;
@@ -257,9 +249,11 @@
 
   .work-list__day {
     @include font-contacts(14px, 26px);
+
     &::after {
       top: -32px;
     }
+
   }
 
   .work-list__time {
@@ -279,9 +273,11 @@
     justify-content: center;
     gap: 16px;
   }
+
 }
 
 @media screen and (min-width: 1200px) {
+
   .contacts {
     padding-bottom: 120px;
   }
@@ -318,4 +314,5 @@
   .contacts-page__info {
     @include font-contacts(16px, 30px);
   }
+  
 }
