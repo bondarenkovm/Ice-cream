@@ -1198,7 +1198,6 @@ element.style {
   text-align: center;
   font-size: 30px;
   line-height: 1.26;
-  letter-spacing: 0.04em;
   margin-bottom: 148px;
   color: var(--black-content-color);
 }
@@ -1293,9 +1292,12 @@ element.style {
     margin: auto;
     border-radius: 24px;
     padding-top: 123px;
-    margin-bottom: 164px;
     width: 280px;
     height: 420px;
+  }
+  .products__item--green,
+.products__item--yellow {
+    margin-bottom: 164px;
   }
   .products__circle {
     width: 200px;
@@ -1339,9 +1341,12 @@ element.style {
     margin: auto;
     border-radius: 24px;
     padding-top: 123px;
-    margin-bottom: 164px;
     width: 280px;
     height: 420px;
+  }
+  .products__item--green,
+.products__item--yellow {
+    margin-bottom: 164px;
   }
   .products__circle {
     width: 200px;
@@ -1376,6 +1381,11 @@ element.style {
   }
   .products__item {
     width: 280px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .products__section {
+    padding-bottom: 164px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -2200,6 +2210,22 @@ element.style {
   }
 }
 
+.anchor-list__link_products {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-right: 13px;
+  padding-left: 11px;
+  color: var(--black-color);
+  border: 2px solid var(--yellow-content-color);
+  border-radius: 8px;
+  cursor: pointer;
+}
+@media screen and (min-width: 1200px) {
+  .anchor-list__link_products {
+    padding: 12px 34px;
+  }
+}
+
 .hero__title {
   font-family: "Seymour One";
   display: block;
@@ -2263,15 +2289,11 @@ element.style {
   }
 }
 
-.anchor-list__item--yellow {
-  display: flex;
-  align-items: center;
-}
-
 .anchor-list__link {
   text-align: center;
   font-family: inherit;
   font-weight: 600;
+  font-size: 8px;
   line-height: 1.25;
   text-decoration: none;
 }
@@ -2286,9 +2308,11 @@ element.style {
 }
 .anchor-list__link_products:hover {
   color: var(--black-content-color);
+  text-decoration: none;
 }
 .anchor-list__link_products:focus {
   color: var(--white-content-color);
+  text-decoration: none;
 }
 
 .anchor-list__link_about {
