@@ -8,7 +8,8 @@
 
     background-color: rgba(0, 0, 0, 0.2);
     opacity: 1;
-    transition: opacity 250ms var(--timing-function);
+    transition: opacity 500ms var(--timing-function), 
+    visibility 500ms var(--timing-function);
     
     &.is-hidden {
         visibility: hidden;

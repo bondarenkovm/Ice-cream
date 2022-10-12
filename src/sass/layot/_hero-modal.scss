@@ -1,70 +1,18 @@
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 10;
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-}
 
 .modal-hero {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: 100%;
   padding: 32px 40px;
-  background: #fcfcfc;
-  border: 2px solid #f8d24e;
-  border-radius: 10px;
-}
-
-.modal-close-btn {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border: #fcfcfc;
-  background-color: transparent;
-  padding: 0;
-  cursor: pointer;
-  transition-duration: var(--timing-function), fill var(--timing-function);
 }
 
 .modal-hero-list {
   display: flex;
-  flex-wrap: wrap;
-  gap: 32px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
+  justify-content: space-between;
   cursor: pointer;
-  text-align: center;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #131313;
-}
 
-.modal-hero-form__button {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
-  display: flex;
-  align-items: center;
+  font-weight: 700;
   text-align: center;
-  color: #131313;
+  text-transform: uppercase;
+  color: var(--black-content-color);
 }
 
 label.modal-hero-form__label {
@@ -75,83 +23,64 @@ label.modal-hero-form__label {
   width: 100%;
 }
 
-.modal-hero-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .modal-hero-form__title {
   margin-bottom: 103px;
   font-family: 'Seymour One';
-  font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
-  align-items: center;
   text-align: center;
   color: var(--black-content-color);
 }
 
-.modal-hero-form__ice-cream {
+.modal-hero-list li {
   position: relative;
-  display: block;
   width: 132px;
   height: 135px;
   padding-top: 95px;
   padding-bottom: 20px;
-  border: 2px solid #96af8c;
-  filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
   border-radius: 15.7808px;
-  transition-duration: 1000ms;
+  transition-duration: 500ms;
+}
 
+.modal-hero-form__ice-cream {
+  border: 2px solid var(--green-product-border-color);
+  filter: drop-shadow(0px 5.26027px 19.726px var(--product-modal-shadow-color));
+  
   &:focus,
   &:hover {
-    background: linear-gradient(0deg, #9cbe8fb3, #9cbe8fb3), #d9d9d9;
+    background: linear-gradient(0deg, var(--green-product-modal-color), var(--green-product-modal-color)), var(--white-product-modal-color);
   }
 }
 
 .modal-hero-form__ice-coffee {
-  position: relative;
-  width: 132px;
-  height: 135px;
-  padding-top: 95px;
-  padding-bottom: 20px;
-  border: 2px solid #efd478;
-  box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
-  border-radius: 15.7808px;
-  transition-duration: 1000ms;
+  border: 2px solid var(--yellow-products-bg-color);
+  box-shadow: 0px 5.26027px 19.726px var(--product-modal-shadow-color);
 
   &:focus,
   &:hover {
     background: linear-gradient(0deg,
-        rgba(248, 210, 78, 0.7),
-        rgba(248, 210, 78, 0.7)),
-      #d9d9d9;
+        var(--about-yellow-color),
+        var(--about-yellow-color)),
+      var(--white-product-modal-color);
   }
 }
 
 .modal-hero-form__ice-milkshakes {
-  position: relative;
-  width: 132px;
-  height: 135px;
-  padding-top: 95px;
-  padding-bottom: 20px;
-  border: 2px solid #d6936d;
-  filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
-  border-radius: 15.7808px;
-  transition-duration: 500ms;
+
+  border: 2px solid var(--orange-products-bg-color);
+  filter: drop-shadow(0px 5.26027px 19.726px var(--product-modal-shadow-color));
 
   &:focus,
   &:hover {
     background: linear-gradient(0deg,
-        rgba(213, 117, 63, 0.7),
-        rgba(213, 117, 63, 0.7)),
-      #d9d9d9;
+        var(--orange-product-modal-color),
+        var(--orange-product-modal-color)),
+      var(--white-product-modal-color);
   }
 }
 
-.modal-hero-form__img--green {
+.modal-hero-form__img {
   position: absolute;
   width: 130px;
   height: 130.6px;
@@ -159,12 +88,24 @@ label.modal-hero-form__label {
   top: -60%;
   z-index: 3;
   border-radius: 50%;
-  background-image: url('../images/products-ice-cream-mobile.png');
   background-size: cover;
   background-position: center;
+
 }
 
-.modal-hero__circle--green {
+.modal-hero-form__img--green {
+  background-image: url('../images/products-ice-cream-mobile.png');
+}
+
+.modal-hero-form__img--yellow {
+  background-image: url('../images/products-ice-coffee-mobile.png');
+}
+
+.modal-hero__img--red {
+  background-image: url('../images/products-milkshake-mobile.png');
+}
+
+.modal-hero-form__circle {
   position: absolute;
   width: 130px;
   height: 130.6px;
@@ -172,6 +113,9 @@ label.modal-hero-form__label {
   top: -50%;
   z-index: 2;
   border-radius: 50%;
+}
+
+.modal-hero__circle--green {
   background: linear-gradient(0deg,
       rgba(156, 190, 143, 0.7),
       rgba(156, 190, 143, 0.7)),
@@ -180,13 +124,6 @@ label.modal-hero-form__label {
 }
 
 .modal-hero-form__circle--yellow {
-  position: absolute;
-  width: 130px;
-  height: 130.6px;
-  left: 0;
-  top: -50%;
-  z-index: 2;
-  border-radius: 50%;
   background: linear-gradient(0deg,
       rgba(248, 210, 78, 0.7),
       rgba(248, 210, 78, 0.7)),
@@ -194,27 +131,7 @@ label.modal-hero-form__label {
   box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
 }
 
-.modal-hero-form__img--yellow {
-  position: absolute;
-  width: 130px;
-  height: 130.6px;
-  left: 0;
-  top: -60%;
-  z-index: 3;
-  border-radius: 50%;
-  background-image: url('../images/products-ice-coffee-mobile.png');
-  background-size: cover;
-  background-position: center;
-}
-
 .modal-hero-form__circle--red {
-  position: absolute;
-  width: 130px;
-  height: 130.6px;
-  left: 0;
-  top: -50%;
-  z-index: 2;
-  border-radius: 50%;
   background: linear-gradient(0deg,
       rgba(213, 117, 63, 0.7),
       rgba(213, 117, 63, 0.7)),
@@ -222,67 +139,49 @@ label.modal-hero-form__label {
   box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
 }
 
-.modal-hero__img--red {
-  position: absolute;
-  width: 130px;
-  height: 130.6px;
-  left: 0;
-  top: -60%;
-  z-index: 3;
-  border-radius: 50%;
-  background-image: url('../images/products-milkshake-mobile.png');
-  background-size: cover;
-  background-position: center;
-}
 
 .modal-hero-form__textarea {
   height: 84px;
   padding: 11px 16px;
   margin-bottom: 32px;
   width: 100%;
-  background-color: rgba(248, 210, 78, 0.1);
-  border: 1px solid #84a178;
+  background-color: var(--modal-form-input-color);
+  border: 1px solid var(--green-bg-color);
   border-radius: 10px;
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  color: #131313;
+  color: var(--black-content-color);
   resize: none;
   outline: none;
 }
 
 .modal-hero-item {
   margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .modal-hero-form__input {
   padding: 11px 16px;
   margin-bottom: 16px;
   width: 100%;
-  background-color: rgba(248, 210, 78, 0.1);
-  border: 1px solid #84a178;
+  background-color: var(--modal-form-input-color);
+  border: 1px solid var(--green-bg-color);
   border-radius: 10px;
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  color: #131313;
+  color: var(--black-content-color);
   outline: none;
-
-  &:placeholder-shown:required {
-    border-color: #84a178;
-  }
-
-  &:valid {
-    border-color: rgb(43, 142, 0);
-  }
-
-  &:invalid {
-    border-color: red;
-  }
 }
-@media screen and (max-width: 480px) {
+
+@media screen and (max-width: 479px) {
+
+  div.modal-hero {
+    width: 90%;
+    top: 60%;
+    padding: 28px;
+  }
+
   .modal-hero-list {
     align-items: center;
     display: flex;
@@ -290,27 +189,35 @@ label.modal-hero-form__label {
     gap: 84px;
   }
 
-  .modal-hero {
-    padding: 28px 28px;
-  }
 }
 
 @media screen and (min-width: 480px) {
+  
   .modal-hero {
-    max-width: 577px;
+    max-width: 480px;
+    padding: 28px 5px;
   }
 
-  .modal-hero {
-    padding: 28px 5px;
+  .modal-hero-item {
+    width: 440px;
   }
 
   .modal-hero-form__label--bloc {
     max-width: 368px;
+    margin-left: auto;
+    margin-right: auto;
   }
+
 }
 
 @media screen and (min-width: 768px) {
+
   .modal-hero {
     max-width: 568px;
   }
+
+  .modal-hero-item {
+    width: 460px;
+  }
+
 }
