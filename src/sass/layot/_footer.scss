@@ -55,8 +55,8 @@
     fill: var(--green-bg-color);
     transition: fill 400ms var(--timing-function);
 
-    &:hover,
-    &:focus {
+    .footer-social-networks__icon:hover &,
+    .footer-social-networks__icon:focus & {
         fill: var(--white-color);
     }
 }
