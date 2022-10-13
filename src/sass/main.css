@@ -28,10 +28,13 @@
     padding-right: 16px;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   letter-spacing: 0.04em;
-  scroll-behavior: smooth;
 }
 
 h2,
@@ -2936,10 +2939,7 @@ label.modal-product-form__label {
 
 .map {
   border-radius: 10px;
-}
-
-.location-modal__button {
-  margin-top: 32px;
+  margin-bottom: 32px;
 }
 
 .location-modal__link {
