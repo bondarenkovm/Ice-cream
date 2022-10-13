@@ -25,16 +25,6 @@
   }
 }
 
-// .products__icon {
-//   stroke-width: 1;
-//   transition: stroke-width var(--transition-dur-and-func-btns);
-
-//   &:focus {
-//     stroke-width: 5;
-//   }
-
-// }
-
 .products__section {
   border: none;
   background-image: url('../images/ice-cream-bg2.jpg');
@@ -79,10 +69,6 @@
   background-color: var(--orange-products-bg-color);
 }
 
-.products__card-wrapper {
-  position: relative;
-}
-
 .products__circle--green {
   background: linear-gradient(0deg, var(--green-product-modal-color), var(--green-product-modal-color)), var(--white-product-modal-color);
   box-shadow: 0 5.34219px 20.0332px #0a881740;
@@ -97,7 +83,6 @@
 }
 
 .products__circle--brown {
-  // margin-bottom: 0;
   background: linear-gradient(0deg,
       var(--orange-product-modal-color),
       var(--orange-product-modal-color)),
@@ -169,11 +154,11 @@
 
     padding: 123px 40px 20px;
     margin: auto;
+    margin-bottom: 0;
     border-radius: 24px;
     padding-top: 123px;
 
     width: 280px;
-    height: 420px;
   }
 
     .products__item--green,
@@ -212,7 +197,6 @@
   }
 
   .products__item {
-    height: 428px;
     width: 224px;
     border-radius: 16px;
   }
@@ -237,12 +221,6 @@
     padding-top: 123px;
 
     width: 280px;
-    height: 420px;
-  }
-
-  .products__item--green,
-  .products__item--yellow {
-    margin-bottom: 164px;
   }
 
   .products__circle {
@@ -304,10 +282,30 @@
   .products__section {
     padding-bottom: 60px;
   }
+
+}
+
+@media screen and (max-width: 1199px) {
+
+  .products__description--green {
+    padding-bottom: 105px;
+  }
+
+  .products__description--yellow {
+    padding-bottom: 55px;
+  }
+
+  .products__description--brown {
+    padding-bottom: 80px;
+  }
 }
 
 // tablet
 @media screen and (min-width: 768px) {
+
+  .products__section {
+    padding-bottom: 80px;
+  }
 
   .products__container {
     width: 768px;
@@ -336,9 +334,7 @@
 
   .products__item {
     width: 224px;
-    height: 428px;
     padding: 108px 26px 20px;
-    margin-bottom: 82px;
   }
 
 
@@ -394,6 +390,10 @@
 
   @media screen and (min-width: 1200px) {
 
+    .products__section {
+      padding-bottom: 60px;
+    }
+
     .products__container {
       width: 1200px;
     }
@@ -416,6 +416,11 @@
     .products__description {
       font-size: 16px;
       line-height: 1.75;
+      padding-bottom: 70px;
+    }
+
+    .products__description--green {
+      padding-bottom: 98px;
     }
 
     .products__name.cream::before {
@@ -473,9 +478,7 @@
 
       position: relative;
       width: 370px;
-      height: 535px;
       padding: 165px 64px 60px;
-      margin-bottom: 57px;
       border-radius: 24px;
     }
 
@@ -495,7 +498,7 @@
       font-size: 30px;
       line-height: 1.2;
 
-      margin-bottom: 40px;
+      margin-bottom: 65px;
       margin-top: 32px;
 
       &::before {
