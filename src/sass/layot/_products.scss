@@ -43,6 +43,14 @@
   margin-bottom: 12px;
 
   color: var(--black-content-color);
+  transform: translate(-30%, 0px);
+  opacity: 0;
+  transition: transform 0.8s ease 0s, opacity 0.8s ease 0s;
+}
+
+.products__label._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
 }
 
 .products__title {
@@ -55,6 +63,14 @@
   margin-bottom: 148px;
 
   color: var(--black-content-color);
+  transform: translate(30%, 0px);
+  opacity: 0;
+  transition: transform 0.8s ease 300ms, opacity 0.8s ease 300ms;
+}
+
+.products__title._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
 }
 
 .products__item--green {
@@ -67,6 +83,17 @@
 
 .products__item--brown {
   background-color: var(--orange-products-bg-color);
+}
+
+.products__item {
+  transform: translate(0px, -20%) scale(0.5);
+  opacity: 0;
+  transition: transform 0.8s ease 0s;
+}
+
+.products__item._active {
+  transform: translate(0px, 0px) scale(1);
+  opacity: 1;
 }
 
 .products__circle--green {

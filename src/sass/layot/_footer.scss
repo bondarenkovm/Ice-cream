@@ -8,6 +8,28 @@
     text-transform: uppercase;
 }
 
+.footer__title--small {
+    transform: translate(30%, 0px) scale(0.4);
+    opacity: 0;
+    transition: transform 0.8s ease 0s;
+}
+
+.footer__title--small._active {
+    transform: translate(0px, 0px) scale(1);
+    opacity: 1;
+}
+
+.footer__title--big {
+    transform: translate(30%, 0px) scale(0.4);
+    opacity: 0;
+    transition: transform 0.8s ease 0s;
+}
+
+.footer__title--big._active {
+    transform: translate(0px, 0px) scale(1);
+    opacity: 1;
+}
+
 .footer-social-networks__list {
     display: flex;
     justify-content: space-between;

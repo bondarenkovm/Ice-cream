@@ -25,6 +25,13 @@
     &:not(:last-child) {
         margin-bottom: 22px;
     }
+
+    transform: scale(-1, 0);
+    transition: transform 0.8s ease 0ms;
+}
+
+.advantages__item._active {
+    transform: scale(1, 1);
 }
 
 .advantages__item--cow {
