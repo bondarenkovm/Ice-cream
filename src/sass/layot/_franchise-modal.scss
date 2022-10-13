@@ -1,6 +1,7 @@
 .franchise-modal__container {
     transform: translate(-50%, -50%) rotateY(0deg);
     transition: var(--transition-modal-window);
+    overflow-y: auto;
 }
 
 .backdrop.is-hidden {
@@ -69,6 +70,8 @@
 @media screen and (max-width: 479px) {
     .franchise-modal__container {
         width: 90%;
+        height: 70%;
+        top: 50%;
         padding: 28px;
     }
 }
