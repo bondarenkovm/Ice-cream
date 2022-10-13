@@ -399,6 +399,7 @@ a {
 }
 
 .advantages__description {
+  font-family: "Montserrat";
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -442,10 +443,13 @@ a {
   .advantages__item:not(:last-child) {
     margin-bottom: 0px;
   }
+  .advantages__value {
+    font-family: "Montserrat";
+  }
   .advantages__description {
     width: 155px;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 400;
     letter-spacing: 0.04em;
   }
 }
@@ -916,13 +920,13 @@ a {
 }
 @-webkit-keyframes cf3FadeInOut {
   0% {
-    opacity: 1;
+    opacity: 0;
   }
   45% {
     opacity: 1;
   }
   55% {
-    opacity: 0;
+    opacity: 1;
   }
   100% {
     opacity: 0;
@@ -930,13 +934,13 @@ a {
 }
 @keyframes cf3FadeInOut {
   0% {
-    opacity: 1;
+    opacity: 0;
   }
   45% {
     opacity: 1;
   }
   55% {
-    opacity: 0;
+    opacity: 1;
   }
   100% {
     opacity: 0;
@@ -1037,9 +1041,10 @@ a {
             animation-timing-function: ease-in-out;
     -webkit-animation-iteration-count: infinite;
             animation-iteration-count: infinite;
-    -webkit-animation-duration: 5s;
-            animation-duration: 5s;
-    animation-direction: reverse;
+    -webkit-animation-duration: 7s;
+            animation-duration: 7s;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
   }
   .gallery__desktop--animation-hidden {
     display: inline-block;
@@ -1047,6 +1052,20 @@ a {
     transform: translateX(-50%, 0);
   }
 }
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
 .container__slider {
   max-width: 1168px;
   padding-top: 128px;
@@ -1228,10 +1247,6 @@ element.style {
   background-color: var(--orange-products-bg-color);
 }
 
-.products__card-wrapper {
-  position: relative;
-}
-
 .products__circle--green {
   background: linear-gradient(0deg, var(--green-product-modal-color), var(--green-product-modal-color)), var(--white-product-modal-color);
   box-shadow: 0 5.34219px 20.0332px rgba(10, 136, 23, 0.2509803922);
@@ -1304,10 +1319,10 @@ element.style {
     position: relative;
     padding: 123px 40px 20px;
     margin: auto;
+    margin-bottom: 0;
     border-radius: 24px;
     padding-top: 123px;
     width: 280px;
-    height: 420px;
   }
   .products__item--green,
 .products__item--yellow {
@@ -1337,7 +1352,6 @@ element.style {
     margin-left: auto;
   }
   .products__item {
-    height: 428px;
     width: 224px;
     border-radius: 16px;
   }
@@ -1356,11 +1370,6 @@ element.style {
     border-radius: 24px;
     padding-top: 123px;
     width: 280px;
-    height: 420px;
-  }
-  .products__item--green,
-.products__item--yellow {
-    margin-bottom: 164px;
   }
   .products__circle {
     width: 200px;
@@ -1402,7 +1411,21 @@ element.style {
     padding-bottom: 60px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .products__description--green {
+    padding-bottom: 105px;
+  }
+  .products__description--yellow {
+    padding-bottom: 55px;
+  }
+  .products__description--brown {
+    padding-bottom: 80px;
+  }
+}
 @media screen and (min-width: 768px) {
+  .products__section {
+    padding-bottom: 80px;
+  }
   .products__container {
     width: 768px;
     padding-left: 32px;
@@ -1425,9 +1448,7 @@ element.style {
   }
   .products__item {
     width: 224px;
-    height: 428px;
     padding: 108px 26px 20px;
-    margin-bottom: 82px;
   }
   .products__list {
     display: flex;
@@ -1469,6 +1490,9 @@ element.style {
   }
 }
 @media screen and (min-width: 768px) and (min-width: 1200px) {
+  .products__section {
+    padding-bottom: 60px;
+  }
   .products__container {
     width: 1200px;
   }
@@ -1487,6 +1511,10 @@ element.style {
   .products__description {
     font-size: 16px;
     line-height: 1.75;
+    padding-bottom: 70px;
+  }
+  .products__description--green {
+    padding-bottom: 98px;
   }
   .products__name.cream::before {
     background-image: url("../images/products-ice-cream-desktop.png");
@@ -1534,9 +1562,7 @@ element.style {
     flex-direction: column;
     position: relative;
     width: 370px;
-    height: 535px;
     padding: 165px 64px 60px;
-    margin-bottom: 57px;
     border-radius: 24px;
   }
 }
@@ -1559,7 +1585,7 @@ element.style {
     font-weight: 700;
     font-size: 30px;
     line-height: 1.2;
-    margin-bottom: 40px;
+    margin-bottom: 65px;
     margin-top: 32px;
   }
   .products__name::before {
@@ -2944,6 +2970,7 @@ label.modal-product-form__label {
 
 .video {
   border-radius: 10px;
+  border: 0;
 }
 
 .read-more-modal__video {
@@ -3010,6 +3037,10 @@ label.modal-product-form__label {
     margin-bottom: 63px;
   }
 }
+.header-menu__title--hidden {
+  display: none;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .mobile-menu__container {
     padding-top: 12px;
