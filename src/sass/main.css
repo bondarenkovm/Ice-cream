@@ -399,6 +399,7 @@ a {
 }
 
 .advantages__description {
+  font-family: "Montserrat";
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -441,6 +442,9 @@ a {
   }
   .advantages__item:not(:last-child) {
     margin-bottom: 0px;
+  }
+  .advantages__value {
+    font-family: "Montserrat";
   }
   .advantages__description {
     width: 155px;
@@ -916,13 +920,13 @@ a {
 }
 @-webkit-keyframes cf3FadeInOut {
   0% {
-    opacity: 1;
+    opacity: 0;
   }
   45% {
     opacity: 1;
   }
   55% {
-    opacity: 0;
+    opacity: 1;
   }
   100% {
     opacity: 0;
@@ -930,13 +934,13 @@ a {
 }
 @keyframes cf3FadeInOut {
   0% {
-    opacity: 1;
+    opacity: 0;
   }
   45% {
     opacity: 1;
   }
   55% {
-    opacity: 0;
+    opacity: 1;
   }
   100% {
     opacity: 0;
@@ -1037,9 +1041,10 @@ a {
             animation-timing-function: ease-in-out;
     -webkit-animation-iteration-count: infinite;
             animation-iteration-count: infinite;
-    -webkit-animation-duration: 5s;
-            animation-duration: 5s;
-    animation-direction: reverse;
+    -webkit-animation-duration: 7s;
+            animation-duration: 7s;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
   }
   .gallery__desktop--animation-hidden {
     display: inline-block;
