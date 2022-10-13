@@ -2542,6 +2542,7 @@ element.style {
   padding: 32px 40px;
   transform: translate(-50%, -50%) scale(1);
   transition: var(--transition-modal-window);
+  overflow-y: auto;
 }
 
 .backdrop.is-hidden .modal-hero {
@@ -2677,8 +2678,10 @@ label.modal-hero-form__label {
 
 @media screen and (max-width: 479px) {
   div.modal-hero {
+    position: absolute;
     width: 90%;
-    top: 60%;
+    height: 70%;
+    top: 50%;
     padding: 28px;
   }
   .modal-hero-list {
