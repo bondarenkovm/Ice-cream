@@ -449,7 +449,7 @@ a {
   .advantages__description {
     width: 155px;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 400;
     letter-spacing: 0.04em;
   }
 }
@@ -1052,6 +1052,20 @@ a {
     transform: translateX(-50%, 0);
   }
 }
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
 .container__slider {
   max-width: 1168px;
   padding-top: 128px;
