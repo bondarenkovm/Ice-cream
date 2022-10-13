@@ -1698,165 +1698,116 @@ element.style {
     color: var(--green-content-color);
   }
 }
-@media screen and (min-width: 321px) and (max-width: 479px) {
-  .hero-ice-mom {
-    display: none;
-  }
-  .hero-ice-son {
-    display: none;
-  }
-  .hero-ice-dad {
-    display: none;
-  }
-}
 .hero-ice-mom {
   position: absolute;
   z-index: 1250;
   -webkit-animation-name: mom-animation;
           animation-name: mom-animation;
 }
-@media screen and (min-width: 320px) and (max-width: 479px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .hero-ice-mom {
-    top: 320px;
-    right: 78px;
-    -webkit-animation-duration: 1000ms;
-            animation-duration: 1000ms;
-  }
-}
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .hero-ice-mom {
-    top: 320px;
-    right: 188px;
+    top: 36%;
+    right: 0%;
     -webkit-animation-duration: 1000ms;
             animation-duration: 1000ms;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero-ice-mom {
-    top: 140px;
-    right: 90px;
+    top: 35%;
+    right: 0%;
     -webkit-animation-duration: 1150ms;
             animation-duration: 1150ms;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero-ice-mom {
-    top: 225px;
-    right: 90px;
-    -webkit-animation-duration: 4150ms;
-            animation-duration: 4150ms;
+    top: 35%;
+    right: -3%;
+    -webkit-animation-duration: 1200ms;
+            animation-duration: 1200ms;
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 479px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   @-webkit-keyframes mom-animation {
     0% {
-      top: 0px;
-      right: 78px;
+      top: -170%;
+      right: 0%;
     }
     90% {
-      top: 350px;
-      right: 78px;
+      top: 58%;
+      right: 0%;
     }
     100% {
-      top: 320px;
-      right: 78px;
+      top: 36%;
+      right: 0%;
     }
   }
   @keyframes mom-animation {
     0% {
-      top: 0px;
-      right: 78px;
+      top: -170%;
+      right: 0%;
     }
     90% {
-      top: 350px;
-      right: 78px;
+      top: 58%;
+      right: 0%;
     }
     100% {
-      top: 320px;
-      right: 78px;
-    }
-  }
-}
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  @-webkit-keyframes mom-animation {
-    0% {
-      top: 0px;
-      right: 188px;
-    }
-    90% {
-      top: 350px;
-      right: 188px;
-    }
-    100% {
-      top: 320px;
-      right: 188px;
-    }
-  }
-  @keyframes mom-animation {
-    0% {
-      top: 0px;
-      right: 188px;
-    }
-    90% {
-      top: 350px;
-      right: 188px;
-    }
-    100% {
-      top: 320px;
-      right: 188px;
+      top: 36%;
+      right: 0%;
     }
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   @-webkit-keyframes mom-animation {
     0% {
-      top: 140px;
-      right: 450px;
+      top: 35%;
+      right: 205%;
     }
     100% {
-      top: 140px;
-      right: 90px;
+      top: 35%;
+      right: 0%;
     }
   }
   @keyframes mom-animation {
     0% {
-      top: 140px;
-      right: 450px;
+      top: 35%;
+      right: 205%;
     }
     100% {
-      top: 140px;
-      right: 90px;
+      top: 35%;
+      right: 0%;
     }
   }
 }
 @media screen and (min-width: 1200px) {
   @-webkit-keyframes mom-animation {
     0% {
-      top: 0px;
-      right: 590px;
+      top: 35%;
+      right: 150%;
     }
-    50% {
-      top: 360px;
-      right: 290px;
+    90% {
+      top: 43%;
+      right: -20%;
     }
     100% {
-      top: 225px;
-      right: 90px;
+      top: 35%;
+      right: -3%;
     }
   }
   @keyframes mom-animation {
     0% {
-      top: 0px;
-      right: 590px;
+      top: 35%;
+      right: 150%;
     }
-    50% {
-      top: 360px;
-      right: 290px;
+    90% {
+      top: 43%;
+      right: -20%;
     }
     100% {
-      top: 225px;
-      right: 90px;
+      top: 35%;
+      right: -3%;
     }
   }
 }
@@ -1867,148 +1818,110 @@ element.style {
   -webkit-animation-name: son-animation;
           animation-name: son-animation;
 }
-@media screen and (min-width: 320px) and (max-width: 479px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .hero-ice-son {
-    top: 290px;
-    right: 148px;
+    top: 21%;
+    right: 45%;
     -webkit-animation-duration: 1000ms;
             animation-duration: 1000ms;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .hero-ice-son {
-    top: 290px;
-    right: 258px;
-    -webkit-animation-duration: 950ms;
-            animation-duration: 950ms;
-  }
-}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero-ice-son {
-    top: 90px;
-    left: 450px;
+    top: 19%;
+    left: 15%;
     -webkit-animation-duration: 1000ms;
             animation-duration: 1000ms;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero-ice-son {
-    top: 140px;
-    left: 725px;
-    -webkit-animation-duration: 4150ms;
-            animation-duration: 4150ms;
+    top: 19%;
+    left: 15%;
+    -webkit-animation-duration: 1200ms;
+            animation-duration: 1200ms;
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 479px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   @-webkit-keyframes son-animation {
     0% {
-      top: 0px;
-      right: 148px;
+      top: -170%;
+      right: 45%;
     }
     90% {
-      top: 310px;
-      right: 148px;
+      top: 41%;
+      right: 45%;
     }
     100% {
-      top: 290px;
-      right: 148px;
+      top: 21%;
+      right: 45%;
     }
   }
   @keyframes son-animation {
     0% {
-      top: 0px;
-      right: 148px;
+      top: -170%;
+      right: 45%;
     }
     90% {
-      top: 310px;
-      right: 148px;
+      top: 41%;
+      right: 45%;
     }
     100% {
-      top: 290px;
-      right: 148px;
-    }
-  }
-}
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  @-webkit-keyframes son-animation {
-    0% {
-      top: 0px;
-      right: 258px;
-    }
-    90% {
-      top: 310px;
-      right: 258px;
-    }
-    100% {
-      top: 290px;
-      right: 258px;
-    }
-  }
-  @keyframes son-animation {
-    0% {
-      top: 0px;
-      right: 258px;
-    }
-    90% {
-      top: 310px;
-      right: 258px;
-    }
-    100% {
-      top: 290px;
-      right: 258px;
+      top: 21%;
+      right: 45%;
     }
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   @-webkit-keyframes son-animation {
     0% {
-      top: 90px;
-      left: 180px;
+      top: 19%;
+      left: -205%;
     }
     100% {
-      top: 90px;
-      left: 450px;
+      top: 19%;
+      left: 15%;
     }
   }
   @keyframes son-animation {
     0% {
-      top: 90px;
-      left: 180px;
+      top: 19%;
+      left: -205%;
     }
     100% {
-      top: 90px;
-      left: 450px;
+      top: 19%;
+      left: 15%;
     }
   }
 }
 @media screen and (min-width: 1200px) {
   @-webkit-keyframes son-animation {
     0% {
-      top: 0px;
-      left: 0px;
+      top: 20%;
+      left: -150%;
     }
-    50% {
-      top: 420px;
-      left: 390px;
+    90% {
+      top: 28%;
+      left: 40%;
     }
     100% {
-      top: 140px;
-      left: 725px;
+      top: 19%;
+      left: 15%;
     }
   }
   @keyframes son-animation {
     0% {
-      top: 0px;
-      left: 0px;
+      top: 20%;
+      left: -150%;
     }
-    50% {
-      top: 420px;
-      left: 390px;
+    90% {
+      top: 28%;
+      left: 40%;
     }
     100% {
-      top: 140px;
-      left: 725px;
+      top: 19%;
+      left: 15%;
     }
   }
 }
@@ -2018,156 +1931,110 @@ element.style {
   -webkit-animation-name: dad-animation;
           animation-name: dad-animation;
 }
-@media screen and (min-width: 320px) and (max-width: 479px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .hero-ice-dad {
-    top: 250px;
-    right: 88px;
-    -webkit-animation-duration: 900ms;
-            animation-duration: 900ms;
-  }
-}
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .hero-ice-dad {
-    top: 250px;
-    right: 198px;
+    top: 0%;
+    right: 3%;
     -webkit-animation-duration: 900ms;
             animation-duration: 900ms;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero-ice-dad {
-    top: 30px;
-    left: 530px;
+    top: 0%;
+    left: 45%;
     -webkit-animation-duration: 900ms;
             animation-duration: 900ms;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero-ice-dad {
-    bottom: 370px;
-    right: 100px;
-    -webkit-animation-duration: 3750ms;
-            animation-duration: 3750ms;
+    top: 0%;
+    left: 45%;
+    -webkit-animation-duration: 1200ms;
+            animation-duration: 1200ms;
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 479px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   @-webkit-keyframes dad-animation {
     0% {
-      top: 0px;
-      right: 88px;
+      top: -170%;
+      right: 3%;
     }
     90% {
-      top: 270px;
-      right: 88px;
+      top: 20%;
+      right: 3%;
     }
     100% {
-      top: 250px;
-      right: 88px;
+      top: 0%;
+      right: 3%;
     }
   }
   @keyframes dad-animation {
     0% {
-      top: 0px;
-      right: 88px;
+      top: -170%;
+      right: 3%;
     }
     90% {
-      top: 270px;
-      right: 88px;
+      top: 20%;
+      right: 3%;
     }
     100% {
-      top: 250px;
-      right: 88px;
-    }
-  }
-}
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  @-webkit-keyframes dad-animation {
-    0% {
-      top: 0px;
-      right: 198px;
-    }
-    90% {
-      top: 270px;
-      right: 198px;
-    }
-    100% {
-      top: 250px;
-      right: 198px;
-    }
-  }
-  @keyframes dad-animation {
-    0% {
-      top: 0px;
-      right: 198px;
-    }
-    90% {
-      top: 270px;
-      right: 198px;
-    }
-    100% {
-      top: 250px;
-      right: 198px;
+      top: 0%;
+      right: 3%;
     }
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   @-webkit-keyframes dad-animation {
     0% {
-      top: 30px;
-      left: 200px;
+      top: 0%;
+      left: -205%;
     }
     100% {
-      top: 30px;
-      left: 530px;
+      top: 0%;
+      left: 45%;
     }
   }
   @keyframes dad-animation {
     0% {
-      top: 30px;
-      left: 200px;
+      top: 0%;
+      left: -205%;
     }
     100% {
-      top: 30px;
-      left: 530px;
+      top: 0%;
+      left: 45%;
     }
   }
 }
 @media screen and (min-width: 1200px) {
   @-webkit-keyframes dad-animation {
     0% {
-      bottom: 0px;
-      right: 1050px;
+      top: -20%;
+      left: -140%;
     }
-    33% {
-      bottom: 370px;
-      right: 650px;
-    }
-    66% {
-      bottom: 0px;
-      right: 550px;
+    90% {
+      top: 5%;
+      left: 75%;
     }
     100% {
-      bottom: 370px;
-      right: 100px;
+      top: 0%;
+      left: 45%;
     }
   }
   @keyframes dad-animation {
     0% {
-      bottom: 0px;
-      right: 1050px;
+      top: -20%;
+      left: -140%;
     }
-    33% {
-      bottom: 370px;
-      right: 650px;
-    }
-    66% {
-      bottom: 0px;
-      right: 550px;
+    90% {
+      top: 5%;
+      left: 75%;
     }
     100% {
-      bottom: 370px;
-      right: 100px;
+      top: 0%;
+      left: 45%;
     }
   }
 }
@@ -2187,6 +2054,7 @@ element.style {
 }
 .hero {
   background-color: var(--green-bg-color);
+  padding-top: 61px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -2197,7 +2065,6 @@ element.style {
   width: 100%;
   height: 453px;
   padding-left: 20px;
-  padding-top: 61px;
 }
 @media screen and (min-width: 480px) {
   .hero__container {
@@ -2349,31 +2216,31 @@ element.style {
   color: var(--white-content-color);
 }
 
-.hero-ice-cream {
+.hero-ice-cream_wrap {
   position: absolute;
   display: block;
   z-index: 300;
 }
 @media screen and (min-width: 320px) and (max-width: 479px) {
-  .hero-ice-cream {
-    top: 245px;
-    left: 28%;
+  .hero-ice-cream_wrap {
+    top: 54%;
+    left: 29%;
   }
 }
 @media screen and (min-width: 480px) {
-  .hero-ice-cream {
-    top: 245px;
-    left: 136px;
+  .hero-ice-cream_wrap {
+    top: 54%;
+    left: 29%;
   }
 }
 @media screen and (min-width: 768px) {
-  .hero-ice-cream {
+  .hero-ice-cream_wrap {
     top: 25px;
     left: 418px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .hero-ice-cream {
+  .hero-ice-cream_wrap {
     top: 30px;
     left: 651px;
   }
@@ -2384,28 +2251,26 @@ element.style {
   height: 218px;
   position: absolute;
   display: block;
-  z-index: 280;
+  z-index: -1;
   background: rgba(252, 252, 252, 0.44);
   filter: blur(26.8405px);
 }
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .hero-ice-cream_bg {
-    top: 242px;
-    left: 28%;
+    top: 0%;
+    left: 0%;
   }
 }
 @media screen and (min-width: 480px) {
   .hero-ice-cream_bg {
-    top: 242px;
-    left: 136px;
+    top: 0%;
+    left: 0%;
   }
 }
 @media screen and (min-width: 768px) {
   .hero-ice-cream_bg {
     width: 266px;
     height: 341px;
-    top: 25px;
-    left: 418px;
     filter: blur(27.9859px);
   }
 }
@@ -2413,8 +2278,6 @@ element.style {
   .hero-ice-cream_bg {
     width: 477px;
     height: 590px;
-    top: 27px;
-    left: 651px;
     filter: blur(60px);
   }
 }
@@ -2424,7 +2287,7 @@ element.style {
   display: block;
   left: 0;
   bottom: 0;
-  z-index: 0;
+  z-index: 2;
 }
 @media screen and (max-width: 767px) {
   .hero-dots {
