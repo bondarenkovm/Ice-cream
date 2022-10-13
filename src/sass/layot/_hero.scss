@@ -521,6 +521,7 @@
   text-decoration-line: underline;
   color: var(--yellow-content-color);
   cursor: pointer;
+  transition: color var(--transition-dur-and-func-btns);
 
   @media screen and (min-width: 1200px) {
     padding: 12px 21px;

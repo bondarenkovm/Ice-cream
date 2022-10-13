@@ -34,8 +34,8 @@
     border: 2px solid var(--yellow-content-color);
     color: var(--black-content-color);
     outline: none;
-    transition: border 400ms var(--timing-function),
-        color 400ms var(--timing-function);
+    transition: border var(--transition-dur-and-func-btns),
+        color var(--transition-dur-and-func-btns);
 
     &:hover,
     &:focus {
@@ -52,7 +52,7 @@
     height: 12;
     width: 12;
     stroke: var(--black-content-color);
-    transition: stroke 400ms var(--timing-function);
+    transition: stroke var(--transition-dur-and-func-btns);
 
     .button-border-yellow:focus &,
     .button-yellow:focus & {

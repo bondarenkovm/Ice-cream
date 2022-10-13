@@ -31,6 +31,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   letter-spacing: 0.04em;
+  scroll-behavior: smooth;
 }
 
 h2,
@@ -2323,6 +2324,7 @@ element.style {
           text-decoration-line: underline;
   color: var(--yellow-content-color);
   cursor: pointer;
+  transition: color var(--transition-dur-and-func-btns);
 }
 @media screen and (min-width: 1200px) {
   .anchor-list__link_about {
@@ -2893,10 +2895,6 @@ label.modal-product-form__label {
     min-width: 488px;
   }
 }
-.backdrop {
-  transition: opacity 1000ms ease, visibility 1000ms ease;
-}
-
 .backdrop.is-hidden .location-modal__container {
   transform: translate(-50%, -50%) rotateY(360deg);
 }
@@ -3044,10 +3042,6 @@ label.modal-product-form__label {
     width: 568px;
   }
 }
-.backdrop {
-  transition: opacity 1000ms ease, visibility 1000ms ease;
-}
-
 .backdrop.is-hidden .read-more-modal__container {
   transform: translate(-50%, -50%) rotateX(60deg);
 }
@@ -3201,7 +3195,7 @@ label.modal-product-form__label {
   border: 2px solid var(--yellow-content-color);
   color: var(--black-content-color);
   outline: none;
-  transition: border 400ms var(--timing-function), color 400ms var(--timing-function);
+  transition: border var(--transition-dur-and-func-btns), color var(--transition-dur-and-func-btns);
 }
 .button-border-yellow:hover, .button-border-yellow:focus {
   border: 2px solid var(--green-content-color);
@@ -3215,7 +3209,7 @@ label.modal-product-form__label {
   height: 12;
   width: 12;
   stroke: var(--black-content-color);
-  transition: stroke 400ms var(--timing-function);
+  transition: stroke var(--transition-dur-and-func-btns);
 }
 .button-border-yellow:focus .button-icon, .button-yellow:focus .button-icon {
   stroke: var(--white-content-color);
@@ -3247,7 +3241,7 @@ label.modal-product-form__label {
   z-index: 5000;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  transition: opacity 500ms var(--timing-function), visibility 500ms var(--timing-function);
+  transition: opacity 1000ms var(--timing-function), visibility 1000ms var(--timing-function);
 }
 .backdrop.is-hidden {
   visibility: hidden;
