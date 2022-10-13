@@ -759,6 +759,8 @@ a {
 @media screen and (min-width: 320px) {
   .footer {
     padding-top: 0;
+  }
+  .footer-container {
     padding-bottom: 40px;
   }
   .footer__title {
@@ -807,6 +809,8 @@ a {
   .footer-container {
     display: flex;
     justify-content: space-between;
+    align-items: end;
+    padding-bottom: 32px;
   }
   .footer__title {
     width: 352px;
@@ -825,6 +829,9 @@ a {
   .footer-social-networks__list {
     width: 162px;
   }
+  .footer__content {
+    padding-bottom: 20px;
+  }
   .footer__text {
     font-size: 14px;
     font-weight: 700;
@@ -840,6 +847,7 @@ a {
 @media screen and (min-width: 1200px) {
   .footer-container {
     padding: 0;
+    padding-bottom: 55px;
   }
   .footer__title {
     width: 504px;
