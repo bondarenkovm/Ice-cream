@@ -250,6 +250,12 @@
   padding-top: 61px;
   margin-left: auto;
   margin-right: auto;
+  @media screen and (min-width: 768px) {
+    padding-top: 40px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 45px;
+  }
 }
 
 .hero__container {
@@ -306,7 +312,7 @@
   line-height: 1.26;
   text-transform: uppercase;
   color: var(--white-content-color);
-  margin-bottom: 32px;
+
   margin-top: 0;
   transform: scale(0);
   transition: transform 0.8s ease 0s;
@@ -314,19 +320,11 @@
   @media screen and (min-width: 768px) {
     width: 181px;
     font-size: 18px;
-    padding-top: 40px;
-    margin-bottom: 20px;
   }
 
   @media screen and (min-width: 1200px) {
     width: 367px;
     font-size: 36px;
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    top: 45px;
-    left: 16px;
-    z-index: 550;
   }
 }
 
@@ -336,7 +334,6 @@
 
 .hero__title_passion {
   font-size: 34px;
-
   @media screen and (min-width: 768px) {
     font-size: 24px;
   }
@@ -351,14 +348,12 @@
 .hero__anchor-list {
   display: flex;
   gap: 8px;
-
+  margin-top: 32px;
+  @media screen and (min-width: 768px) {
+    margin-top: 20px;
+  }
   @media screen and (min-width: 1200px) {
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    top: 217px;
-    left: 16px;
-    z-index: 555;
+    margin-top: 28px;
   }
 }
 
@@ -378,7 +373,7 @@
 .anchor-list__link_products {
   color: var(--black-content-color);
   transition: color var(--transition-dur-and-func-btns),
-  border var(--transition-dur-and-func-btns);
+    border var(--transition-dur-and-func-btns);
 
   &:hover {
     color: var(--black-content-color);
