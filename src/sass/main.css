@@ -2193,6 +2193,16 @@ element.style {
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 45px;
+  }
+}
 
 .hero__container {
   position: relative;
@@ -2252,7 +2262,6 @@ element.style {
   line-height: 1.26;
   text-transform: uppercase;
   color: var(--white-content-color);
-  margin-bottom: 32px;
   margin-top: 0;
   transform: scale(0);
   transition: transform 0.8s ease 0s;
@@ -2261,20 +2270,12 @@ element.style {
   .hero__title {
     width: 181px;
     font-size: 18px;
-    padding-top: 40px;
-    margin-bottom: 20px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
     width: 367px;
     font-size: 36px;
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    top: 45px;
-    left: 16px;
-    z-index: 550;
   }
 }
 
@@ -2299,15 +2300,16 @@ element.style {
 .hero__anchor-list {
   display: flex;
   gap: 8px;
+  margin-top: 32px;
+}
+@media screen and (min-width: 768px) {
+  .hero__anchor-list {
+    margin-top: 20px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero__anchor-list {
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    top: 217px;
-    left: 16px;
-    z-index: 555;
+    margin-top: 28px;
   }
 }
 
